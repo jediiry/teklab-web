@@ -77,6 +77,19 @@ const routes = [
     component: () =>
       import("../views/SafeHouseDiscosure.vue"),
   },
+  {
+    path: "/terms-condition",
+    name: "TermsCondition",
+    component: () =>
+      import("../views/TermsCondition.vue"),
+  },
+  {
+    path: "/contact-us",
+    name: "ContactUs",
+    component: () =>
+      import("../views/ContactUs.vue"),
+  },
+  
   
 ];
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-evenly items-end px-3 md:px-5 pt-5">
+  <div class="flex justify-evenly items-end px-3 md:px-5 pt-3">
     <div>
       <img src="../../assets/img/Logo.svg" class="w-32" alt="" />
     </div>
@@ -14,7 +14,7 @@
         <span class="webmenu-item">Hack Collage</span>
         <span class="webmenu-item">Contact Us</span>
       </div>
-      <b-btn class="ml-5"> Login </b-btn>
+      <b-btn class="ml-5 bg-pink"> Login </b-btn>
     </div>
   </div>
 </template>

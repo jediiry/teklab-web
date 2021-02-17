@@ -67,7 +67,7 @@
                 <span class="font-italic text-sm">Last updated on 16th January, 2021</span>
             </div>
             <div class="flex justify-center mb-20">
-                <button class="px-8 py-2 bg-pink text-white rounded">Submit a Report</button>
+                <button class="px-14 py-3 bg-pink text-white rounded">Submit a Report</button>
             </div>
         </div>
         <main-footer></main-footer>
