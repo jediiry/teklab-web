@@ -36,3 +36,40 @@ body {
 .flex-6 {
   flex: 6;
 }
+.color-pink {
+  color: #DA04F2;
+}
+.bg-pink {
+  background: #DA04F2;
+}
+.bg-light-pink {
+  background: rgba(218, 4, 242, 0.25);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 8%;
+  padding: 50px 55px;
+}
+/* 
+.side__menu{
+  border: 1px dashed;
+}
+
+.content{
+  border: 1px dashed;
+} */
+.menu__bullet {
+  width: 30px;
+  display: inline-block;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+}
+.menu__bullet span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
