@@ -64,7 +64,7 @@
             </div>
 
             <div class="flex justify-end mb-4">
-                <span class="font-italic text-sm">Last updated n 16th January, 2021</span>
+                <span class="font-italic text-sm">Last updated on 16th January, 2021</span>
             </div>
             <div class="flex justify-center mb-20">
                 <button class="px-8 py-2 bg-pink text-white rounded">Submit a Report</button>

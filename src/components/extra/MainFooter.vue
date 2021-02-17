@@ -8,7 +8,7 @@
             type="text"
             placeholder="Your email address"
             class="form-control rounded-0"
-            /><b-btn class="rounded-0">Subscribe</b-btn>
+            /><b-btn class="rounded-0 bg-pink">Subscribe</b-btn>
         </div>
         <div class="mt-6">
             <i class="fab fa-facebook mx-2 fa-2x"></i>
