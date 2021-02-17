@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="mb-8">
+        <div class="mb-24">
             <div class="contact__formbox ">
                 <div class="mb-3 border w-full px-3 py-2">
                     <i class="fas fa-user mr-3"></i>
