@@ -71,6 +71,13 @@ const routes = [
     component: () =>
       import("../views/ServiceLevelAgreement.vue"),
   },
+  {
+    path: "/safe-house-discosure",
+    name: "SafeHouseDiscosure",
+    component: () =>
+      import("../views/SafeHouseDiscosure.vue"),
+  },
+  
 ];
 
 const router = new VueRouter({

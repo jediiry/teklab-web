@@ -3,7 +3,7 @@
         <img src="../../assets/img/banner_img.jpg" alt="Snow" style="width:100%;">
         <div class="bottom-right italic">{{ date }}</div>
         <div class="centered">
-            <h1 class="mb-2 font-bold">{{ title }}</h1>
+            <h1 style="width: max-content;" class="mb-2 font-bold">{{ title }}</h1>
             <p>{{ subtitle }}</p>
         </div>
     </div>
