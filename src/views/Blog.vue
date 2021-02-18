@@ -91,16 +91,16 @@
 
                     <div class="flex justify-center my-24">
                         <div class="flex">
-                            <div class="bg-gray-300 text-white h-8 w-8 rounded-full flex justify-center items-center">
+                            <div class="bg-gray-300 text-white cursor-pointer h-8 w-8 rounded-full flex justify-center items-center">
                                 <i class="fas fa-arrow-left"></i>
                             </div>
-                            <div class="flex mx-5">
-                                <span class="bg-pink text-white h-8 w-8 rounded-full flex font-bold justify-center items-center mr-3">1</span>
-                                <span class="font-bold h-8 w-8 rounded-full flex font-bold justify-center items-center mr-3">2</span>
-                                <span class="font-bold h-8 w-8 rounded-full flex font-bold justify-center items-center mr-3">3</span>
-                                <span class="font-bold h-8 w-8 rounded-full flex font-bold justify-center items-center">4</span>
+                            <div class="flex mx-4">
+                                <span class="bg-pink text-white h-8 w-8 cursor-pointer rounded-full flex font-bold justify-center items-center mr-3">1</span>
+                                <span class="font-bold h-8 w-8 cursor-pointer rounded-full flex font-bold justify-center items-center mr-3">2</span>
+                                <span class="font-bold h-8 w-8 cursor-pointer rounded-full flex font-bold justify-center items-center mr-3">3</span>
+                                <span class="font-bold h-8 w-8 cursor-pointer rounded-full flex font-bold justify-center items-center">4</span>
                             </div>
-                            <div class="bg-pink text-white h-8 w-8 rounded-full flex justify-center items-center">
+                            <div class="bg-pink text-white h-8 w-8 cursor-pointer rounded-full flex justify-center items-center">
                                 <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
