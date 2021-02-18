@@ -15,10 +15,38 @@
             <div class="grid grid-cols-2 my-16 gap-16">
                 <div class="col-span-1 flex flex-col justify-center py-4">
                     <h2 class="color-pink mb-2 font-bold">TEKLABSPACE VDP</h2>
-                    <h3 class="text-uppercase mb-3 font-bold text-base">Respond Quickly To Security Flaws</h3>
+                    <h3 class="text-uppercase mb-3 font-bold text-base underline">Respond Quickly To Security Flaws</h3>
                     <p>Every organization should welcome the assistance of individuals seeking to point out potential vulnerabilities. A Vulnerability Disclosure Policy (VDP) provides clear guidelines to hackers and researchers for reporting vulnerabilities. It's also a best practice and a regulatory expectation. Teklabspace guides hackers to submit findings through the proper channels, ensures submissions are received quickly and in a consistent format, and integrates incoming reports with your existing security workflows for faster remediation. </p>
                     <div>
-                        <button class="bordered-btn">How it Works</button>
+                        <button class="bordered-btn font-bold">How it Works</button>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <img src="../assets/img/service_img.png" alt="">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 my-16 gap-16">
+                <div class="col-span-1">
+                    <img src="../assets/img/service_img.png" alt="">
+                </div>
+                <div class="col-span-1 flex flex-col justify-center py-4">
+                    <h2 class="color-pink mb-2 font-bold">TEKLABSPACE BOUNTY</h2>
+                    <h3 class="text-uppercase mb-3 font-bold text-base underline">AWARD BOUNTIES FOR CONTINUOUS COVERAGE</h3>
+                    <p>Bug bounty programs give ethical hackers an incentive to test your organization’s security. They leverage the talent, creativity, experience, and continuous efforts of these hackers to search for potential vulnerabilities in pinpoint areas or across broad attack surfaces, and continuously or for limited-duration events. Teklabspace Bounty enlists the assistance of a global community of hackers, and adds the largest, most robust database of valid vulnerabilities, to help you find and mitigate security gaps. Programs can be private, public, time-bound, or even live virtual or in-person events. Teklabspace adds powerful solutions to track performance,  integrate with your existing bug tracking and mitigation tools, and benchmark your efforts against similar programs. </p>
+                    <div>
+                        <button class="bordered-btn font-bold">How it Works</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 my-16 gap-16">
+                <div class="col-span-1 flex flex-col justify-center py-4">
+                    <h2 class="color-pink mb-2 font-bold">TEKLABSPACE VAPT</h2>
+                    <h3 class="text-uppercase mb-3 font-bold text-base underline">PREMIUM PENTESTS TO MAINTAIN COMPLIANCE</h3>
+                    <p>Every organization should welcome the assistance of individuals seeking to point out potential vulnerabilities. A Vulnerability Disclosure Policy (VDP) provides clear guidelines to hackers and researchers for reporting vulnerabilities. It's also a best practice and a regulatory expectation. Teklabspace guides hackers to submit findings through the proper channels, ensures submissions are received quickly and in a consistent format, and integrates incoming reports with your existing security workflows for faster remediation. </p>
+                    <div>
+                        <button class="bordered-btn font-bold">How it Works</button>
                     </div>
                 </div>
                 <div class="col-span-1">
