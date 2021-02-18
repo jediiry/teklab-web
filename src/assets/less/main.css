@@ -73,3 +73,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+select:active,
+select:focus,
+textarea:active,
+textarea:focus,
+input:active,
+input:focus {
+  outline: none;
+}

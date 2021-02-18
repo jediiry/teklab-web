@@ -95,6 +95,13 @@ const routes = [
     component: () =>
       import("../views/Blog.vue"),
   },
+  {
+    path: "/company-service",
+    name: "CompanyService",
+    component: () =>
+      import("../views/CompanyService.vue"),
+  },
+  
   
   
 ];

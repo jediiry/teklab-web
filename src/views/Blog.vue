@@ -89,7 +89,7 @@
                         </div>
                     </div>
 
-                    <div class="flex justify-center my-24">
+                    <div class="flex justify-center my-20">
                         <div class="flex">
                             <div class="bg-gray-300 text-white cursor-pointer h-8 w-8 rounded-full flex justify-center items-center">
                                 <i class="fas fa-arrow-left"></i>

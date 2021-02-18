@@ -94,15 +94,7 @@ export default {
     margin: 0 auto;
 }
 
-select:active,
-select:focus,
-textarea:active,
-textarea:focus,
-input:active,
-input:focus
-{
-    outline: none
-}
+
 
 ::-webkit-input-placeholder { /* Edge */
   color: #888;
