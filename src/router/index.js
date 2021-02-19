@@ -105,8 +105,21 @@ const routes = [
     name: "How",
     component: () => import("../views/How.vue"),
   },
-  
-  
+  {
+    path: "/careers",
+    name: "Careers",
+    component: () => import("../views/Careers.vue"),
+  },
+  {
+    path: "/researcher",
+    name: "Researcher",
+    component: () => import("../views/Researcher.vue"),
+  },
+  {
+    path: "/hack-collage",
+    name: "HackCollage",
+    component: () => import("../views/HackCollage.vue"),
+  },
   
 ];
 
