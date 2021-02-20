@@ -8,13 +8,25 @@
     </div>
     <div class="webmenu items-center">
       <div class="flex">
-        <span class="webmenu-item">Home</span>
-        <span class="webmenu-item">Company</span>
-        <span class="webmenu-item">Researcher</span>
-        <span class="webmenu-item">Hack Collage</span>
-        <span class="webmenu-item">Contact Us</span>
+        <span class="webmenu-item">
+          <router-link to="/">Home</router-link>
+        </span>
+        <span class="webmenu-item">
+          <router-link to="/company-service"> Company</router-link>
+        </span>
+        <span class="webmenu-item">
+          <router-link to="/researcher">Researcher</router-link>
+        </span>
+        <span class="webmenu-item">
+          <router-link to="/hack-collage">Hack Collage</router-link>
+        </span>
+        <span class="webmenu-item">
+          <router-link to="/contact-us">Contact Us</router-link>
+        </span>
       </div>
-      <b-btn class="ml-5 bg-pink"> Login </b-btn>
+      <b-btn class="ml-5 bg-pink">
+        <router-link to="/sign-in">Login</router-link>
+      </b-btn>
     </div>
   </div>
 </template>
@@ -42,5 +54,8 @@ export default {};
   .mobilemenu {
     display: none;
   }
+}
+router-link {
+  text-decoration: none;
 }
 </style>
