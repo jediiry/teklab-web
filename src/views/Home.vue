@@ -4,10 +4,11 @@
       <div>
         <navbar></navbar>
       </div>
-      <div class="grid grid-cols-9 gap-10 mt-10 items-center">
+      <div class="grid grid-cols-9 gap-10 items-center">
         <div class="col-span-6 col-start-3 md:col-start-2 md:col-span-4">
-          <h2 class="text-3xl md:text-5xl">
-            Africa’s First Ethical Hacking and Crowdsourced Security platform
+          <h2 class="text-3xl md:text-5xl font-bold">
+            Africa’s <span class="text-green-600">First</span> Ethical Hacking
+            and Crowdsourced Security platform
           </h2>
           <p class="text-xs md:text-lg">
             Cyber criminals are evolving in their activities and there is a need
@@ -22,8 +23,8 @@
         </div>
         <div class="col-span-3">
           <img
-            src="../assets/img/header.svg"
-            class="w-80 hidden md:block"
+            src="../assets/img/main.png"
+            class="w-85 hidden md:block Imagebanner"
             alt=""
           />
         </div>
@@ -50,7 +51,7 @@
         to fix your vulnerabilities as well
       </p>
       <div class="px-10 py-3">
-        <div class="grid grid-cols-3 gap-10">
+        <div class="grid grid-cols-3 gap-5">
           <div
             class="bg-white border-3 border-solid border-gray-800 rounded p-5"
           >
@@ -183,12 +184,12 @@
         <hr class="divider" />
       </div>
       <p class="text-center text-3xl font-bold">Our Videos</p>
-      <div class="grid grid-cols-5">
-        <div class="col-span-3 col-start-2">
+      <div class="grid grid-cols-6">
+        <div class="col-span-4 col-start-2">
           <div class="flex">
             <div class="flex-1 flex justify-end mx-1">
               <div
-                class="relative rounded h-64 w-80 video"
+                class="relative rounded h-64 w-full video"
                 style="
                   background-image: url('https://recordstoreday.com/Photo/418460158312');
                 "
@@ -201,7 +202,7 @@
             </div>
             <div class="flex-1 flex justify-start">
               <div
-                class="relative rounded h-64 w-80 video"
+                class="relative rounded h-64 w-full video"
                 style="
                   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxA-9bY8y5yeG2RtJWG7V36Kvvj5ozi5TvSA&usqp=CAU');
                 "
@@ -248,7 +249,7 @@ export default {
   name: "home",
   components: {
     navbar,
-    MainFooter
+    MainFooter,
   },
 };
 </script>
@@ -279,5 +280,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.Imagebanner {
+  position: absolute;
+  left: 40%;
+  top: 20%;
 }
 </style>
