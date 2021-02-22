@@ -170,7 +170,7 @@
                 out our blog today
               </p>
               <p>We have tons of amazing content for you!</p>
-              <b-btn>Visit Blog</b-btn>
+              <b-btn to="/blog">Visit Blog</b-btn>
             </div>
             <div class="flex-1">
               <img src="../assets/img/blog.svg" alt="" />
@@ -283,7 +283,7 @@ export default {
 }
 .Imagebanner {
   position: absolute;
-  left: 40%;
+  right: 10%;
   top: 20%;
 }
 </style>

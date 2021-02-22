@@ -11,7 +11,10 @@
         <img src="../../assets/img/main.svg" alt="" />
       </div>
       <div class="col-span-5 md:col-span-3 bg-white p-5">
-        <div class="flex justify-end">Don’t have an account? Sign Up</div>
+        <div class="flex justify-end">
+          Don’t have an account?
+          <span @click.prevent="router('/about')">Sign Up</span>
+        </div>
         <div class="text-center md:mt-5">
           <h2 class="text-xxl font-bold mt-10">Welcome Back!</h2>
         </div>
@@ -33,7 +36,9 @@
                 <input type="checkbox" />
                 Remember me
               </div>
-              <div class="text-xs text-danger">Forgot password?</div>
+              <div class="text-xs text-danger" @click="router('/forget')">
+                Forgot password?
+              </div>
             </div>
           </div>
         </div>
@@ -45,6 +50,11 @@
 <script>
 export default {
   name: "signin",
+  methods: {
+    router(param) {
+      this.$router.push(param);
+    },
+  },
 };
 </script>
 

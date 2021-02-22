@@ -8,25 +8,25 @@
     </div>
     <div class="webmenu items-center">
       <div class="flex">
-        <span class="webmenu-item">
-          <router-link to="/">Home</router-link>
-        </span>
-        <span class="webmenu-item">
-          <router-link to="/company-service"> Company</router-link>
-        </span>
-        <span class="webmenu-item">
-          <router-link to="/researcher">Researcher</router-link>
-        </span>
-        <span class="webmenu-item">
-          <router-link to="/hack-collage">Hack Collage</router-link>
-        </span>
-        <span class="webmenu-item">
-          <router-link to="/contact-us">Contact Us</router-link>
-        </span>
+        <router-link class="webmenu-item" to="/">Home</router-link>
+
+        <router-link class="webmenu-item" to="/company-service">
+          Company</router-link
+        >
+
+        <router-link class="webmenu-item" to="/researcher"
+          >Researcher</router-link
+        >
+
+        <router-link class="webmenu-item" to="/hack-collage"
+          >Hack Collage</router-link
+        >
+
+        <router-link class="webmenu-item" to="/contact-us"
+          >Contact Us</router-link
+        >
       </div>
-      <b-btn class="ml-5 bg-pink">
-        <router-link to="/sign-in">Login</router-link>
-      </b-btn>
+      <b-btn class="ml-5 bg-pink" to="/sign-in"> Login </b-btn>
     </div>
   </div>
 </template>
@@ -40,7 +40,9 @@ export default {};
   display: none;
 }
 .webmenu .webmenu-item {
-  padding: 0 1rem;
+  padding: 1rem;
+  color: black;
+  text-decoration: none;
 }
 .mobilemenu {
   display: flex;
@@ -55,7 +57,7 @@ export default {};
     display: none;
   }
 }
-router-link {
-  text-decoration: none;
+.router-link-exact-active {
+  border-top: 3px solid #da04f2;
 }
 </style>
