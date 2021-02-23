@@ -57,7 +57,7 @@ export default {};
     display: none;
   }
 }
-.router-link-exact-active {
+.webmenu .router-link-exact-active {
   border-top: 3px solid #da04f2;
 }
 </style>

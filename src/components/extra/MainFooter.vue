@@ -32,17 +32,31 @@
       <p>How it works (Company)</p>
       <p>Hall of Fame</p>
       <p>Learn to Hack</p>
-      <p>Hack Collage</p>
-      <p>Safe House</p>
+      <p>
+        <router-link class="route" to="/hack-collage">Hack Collage</router-link>
+      </p>
+      <p>
+        <router-link class="route" to="/safe-house-discosure"
+          >Safe House</router-link
+        >
+      </p>
     </div>
     <div class="col-span-1 text-sm text-gray-500">
       <p class="font-bold text-2xl text-white">TEKLABSPACE</p>
-      <p>About Us</p>
-      <p>Career</p>
+      <p><router-link class="route" to="/about">About Us</router-link></p>
+      <p><router-link class="route" to="/careers">Career</router-link></p>
       <p>Newsletter</p>
       <p>Privacy policy</p>
-      <p>Terms and Conditions</p>
-      <p>Legal Information</p>
+      <p>
+        <router-link class="route" to="/terms-condition"
+          >Terms and Conditions</router-link
+        >
+      </p>
+      <p>
+        <router-link class="route" to="/service-level-agreement"
+          >Legal Information</router-link
+        >
+      </p>
     </div>
   </div>
 </template>
@@ -54,4 +68,8 @@ export default {
 </script>
 
 <style>
+.route {
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+}
 </style>
