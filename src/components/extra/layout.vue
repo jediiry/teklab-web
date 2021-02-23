@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="w-full md:w-1/2 md:mb-10">
-          <b-btn class="shadow-md w-full mt-3">
+          <b-btn class="shadow-md w-full mt-3 bg-pink">
             <slot name="buttontitle"></slot>
           </b-btn>
           <p class="mt-8">
