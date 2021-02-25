@@ -3,7 +3,7 @@
     <img
       src="../../assets/img/imagebanner.png"
       alt="Snow"
-      style="width: 100%"
+      style="width: 100%; height: 100%"
     />
     <div class="bottom-right italic">{{ date }}</div>
     <div class="centered">

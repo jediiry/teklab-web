@@ -1,9 +1,8 @@
 <template>
   <div
-    class="grid grid-cols-5 bg-gray-900 gap-10 text-white"
-    style="padding: 7rem 10rem"
+    class="grid grid-cols-1 md:grid-cols-5 bg-gray-900 gap-10 text-white p-5 md:p-20"
   >
-    <div class="col-span-2">
+    <div class="md:col-span-2">
       <p class="text-5xl font-bold">Stay Connected</p>
       <p>Join over 500+ people who receive our weekly newsletters</p>
       <div class="flex">
@@ -20,13 +19,13 @@
         <i class="fab fa-youtube mx-2 fa-2x"></i>
       </div>
     </div>
-    <div class="col-span-1 text-sm text-gray-500">
+    <div class="md:col-span-1 text-sm text-gray-500">
       <p class="font-bold text-2xl text-white">Contact Us</p>
       <p>Office Address: Ikoyi, Lagos, Nigeria</p>
       <p>Phone: +234-703-100-6005 (SMS)</p>
       <p>Email: +info@teklabspace.com</p>
     </div>
-    <div class="col-span-1 text-sm text-gray-500">
+    <div class="md:col-span-1 text-sm text-gray-500">
       <p class="font-bold text-2xl text-white">Useful Links</p>
       <p>How it works (Researchers)</p>
       <p>How it works (Company)</p>
@@ -41,7 +40,7 @@
         >
       </p>
     </div>
-    <div class="col-span-1 text-sm text-gray-500">
+    <div class="md:col-span-1 text-sm text-gray-500">
       <p class="font-bold text-2xl text-white">TEKLABSPACE</p>
       <p><router-link class="route" to="/about">About Us</router-link></p>
       <p><router-link class="route" to="/careers">Career</router-link></p>

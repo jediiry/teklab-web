@@ -8,42 +8,60 @@
       <div
         class="col-span-5 md:col-span-2 backeffect flex justify-center items-center"
       >
-        <img src="../../assets/img/main.svg" alt="" />
+        <img src="../assets/img/main.svg" alt="" />
       </div>
       <div class="col-span-5 md:col-span-3 bg-white p-5">
         <div class="flex justify-end">
-          Don’t have an account?
+          Already have an account?
           <span
             class="text-pink-600 cursor-pointer"
-            @click.prevent="router('/signup')"
-            >Sign Up</span
+            @click.prevent="router('/sign-in')"
+            >Sign In</span
           >
         </div>
         <div class="text-center md:mt-5">
-          <h2 class="text-xxl font-bold mt-10">Welcome Back!</h2>
+          <h2 class="text-xxl font-bold mt-10">
+            Create your <span class="text-pink-500">Researcher</span> account
+          </h2>
         </div>
         <div class="w-full flex justify-center">
           <div class="w-full md:w-2/3">
             <input
               type="text"
               class="form-control mt-2"
-              placeholder="Email Address"
+              placeholder="Full Name"
+            />
+            <input
+              type="text"
+              class="form-control mt-2"
+              placeholder="Phone Number"
+            />
+            <input
+              type="text"
+              class="form-control mt-2"
+              placeholder="Email address"
             />
             <input
               type="text"
               class="form-control mt-2"
               placeholder="Password"
             />
-            <b-btn class="mt-2 w-full">Sign In</b-btn>
-            <div class="flex justify-between mt-4 items-end">
-              <div class="text-xs">
+            <input
+              type="text"
+              class="form-control mt-2"
+              placeholder="Confirm Password"
+            />
+            <div class="flex mt-4 items-end">
+              <div class="text-xs text-left">
                 <input type="checkbox" />
-                Remember me
+                By clicking sign up, you hereby are in agreement with our Terms
+                & Conditions and Disclaimer
               </div>
-              <div class="text-xs text-danger" @click="router('/forget')">
+              <!-- <div class="text-xs text-danger" @click="router('/forget')">
                 Forgot password?
-              </div>
+              </div> -->
             </div>
+            <b-btn class="mt-2 w-full bg-pink">Sign Up</b-btn>
           </div>
         </div>
       </div>

@@ -25,7 +25,10 @@
           <b-btn class="shadow-md w-full mt-3 bg-pink">
             <slot name="buttontitle"></slot>
           </b-btn>
-          <p class="mt-8">
+          <p
+            class="mt-8 cursor-pointer"
+            @click.prevent="$router.push('/sign-in')"
+          >
             <i class="fas fa-arrow-left"></i>
 
             <slot name="backtitle"></slot>

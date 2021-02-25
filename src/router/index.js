@@ -19,6 +19,27 @@ const routes = [
     },
   },
   {
+    path: "/signup",
+    name: "Signup",
+    component: () => {
+      return import("../views/signup.vue");
+    },
+  },
+  {
+    path: "/researcher",
+    name: "researcher",
+    component: () => {
+      return import("../views/researchersignup.vue");
+    },
+  },
+  {
+    path: "/company-signup",
+    name: "Companysignup",
+    component: () => {
+      return import("../views/companysignup.vue");
+    },
+  },
+  {
     path: "/sent-email",
     name: "sent-email",
     component: () => {
@@ -56,44 +77,37 @@ const routes = [
   {
     path: "/about",
     name: "About",
-    component: () =>
-      import("../views/About.vue"),
+    component: () => import("../views/About.vue"),
   },
   {
     path: "/code-of-conduct",
     name: "codeConduct",
-    component: () =>
-      import("../views/CodeConduct.vue"),
+    component: () => import("../views/CodeConduct.vue"),
   },
   {
     path: "/service-level-agreement",
     name: "ServiceLevelAgreement",
-    component: () =>
-      import("../views/ServiceLevelAgreement.vue"),
+    component: () => import("../views/ServiceLevelAgreement.vue"),
   },
   {
     path: "/safe-house-discosure",
     name: "SafeHouseDiscosure",
-    component: () =>
-      import("../views/SafeHouseDiscosure.vue"),
+    component: () => import("../views/SafeHouseDiscosure.vue"),
   },
   {
     path: "/terms-condition",
     name: "TermsCondition",
-    component: () =>
-      import("../views/TermsCondition.vue"),
+    component: () => import("../views/TermsCondition.vue"),
   },
   {
     path: "/contact-us",
     name: "ContactUs",
-    component: () =>
-      import("../views/ContactUs.vue"),
+    component: () => import("../views/ContactUs.vue"),
   },
   {
     path: "/blog",
     name: "Blog",
-    component: () =>
-      import("../views/Blog.vue"),
+    component: () => import("../views/Blog.vue"),
   },
   {
     path: "/company-service",
@@ -120,7 +134,6 @@ const routes = [
     name: "HackCollage",
     component: () => import("../views/HackCollage.vue"),
   },
-  
 ];
 
 const router = new VueRouter({

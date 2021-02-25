@@ -4,8 +4,8 @@
       <div>
         <navbar></navbar>
       </div>
-      <div class="grid grid-cols-9 gap-10 items-center">
-        <div class="col-span-6 col-start-3 md:col-start-2 md:col-span-4">
+      <div class="grid grid-cols-9 gap-10 md:items-center">
+        <div class="col-span-6 col-start-2 md:col-start-2 md:col-span-4">
           <h2 class="text-3xl md:text-5xl font-bold">
             Africa’s <span class="text-green-600">First</span> Ethical Hacking
             and Crowdsourced Security platform
@@ -18,7 +18,9 @@
           </p>
           <div>
             <b-btn class="mx-1 my-2">Get Started</b-btn>
-            <b-btn variant="outline-danger">Go to Safe House</b-btn>
+            <b-btn variant="outline-danger" to="/safe-house-discosure"
+              >Go to Safe House</b-btn
+            >
           </div>
         </div>
         <div class="col-span-3">
@@ -33,14 +35,26 @@
     <div class="bg-white p-5">
       <p class="text-center text-3xl font-bold">Trusted Partners</p>
       <div class="flex justify-evenly mt-5">
-        <img src="../assets/img/3.svg" class="h-12" alt="" />
-        <img src="../assets/img/5.svg" class="h-12" alt="" />
-        <img src="../assets/img/1.svg" class="h-12" alt="" />
-        <img src="../assets/img/4.svg" class="h-12" alt="" />
-        <img src="../assets/img/2.svg" class="h-12" alt="" />
+        <carousel :per-page="4" :mouse-drag="false">
+          <slide class="mx-3">
+            <img src="../assets/img/3.svg" class="h-12" alt="" />
+          </slide>
+          <slide class="mx-3">
+            <img src="../assets/img/5.svg" class="h-12" alt="" />
+          </slide>
+          <slide class="mx-3">
+            <img src="../assets/img/1.svg" class="h-12" alt="" />
+          </slide>
+          <slide class="mx-3">
+            <img src="../assets/img/4.svg" class="h-12" alt="" />
+          </slide>
+          <slide class="mx-3">
+            <img src="../assets/img/2.svg" class="h-12" alt="" />
+          </slide>
+        </carousel>
       </div>
     </div>
-    <div class="bg-gray-100 p-10">
+    <div class="bg-gray-100 px-3 md:p-10">
       <div class="flex justify-center">
         <hr class="divider" />
       </div>
@@ -50,8 +64,8 @@
         power of crowd source security to enable you deal with these threats and
         to fix your vulnerabilities as well
       </p>
-      <div class="px-10 py-3">
-        <div class="grid grid-cols-3 gap-5">
+      <div class="md:px-10 py-3">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
           <div
             class="bg-white border-3 border-solid border-gray-800 rounded p-5"
           >
@@ -102,7 +116,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-yellow-50 p-5">
+    <div class="bg-yellow-50 p-3 md:p-5">
       <div class="flex justify-center">
         <hr class="divider" />
       </div>
@@ -111,59 +125,115 @@
         We asked few people for what they think about TeklabSpace and here is
         what they said
       </p>
-      <div class="p-3">
-        <div class="grid grid-cols-6 gap-10">
-          <div class="p-5">
+      <div class="md:p-3">
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-10">
+          <div class="p-5 hidden md:block">
             <i class="fas fa-arrow-circle-left text-gray-300 fa-3x"></i>
           </div>
           <div
-            class="col-span-4 bg-white border-3 border-solid border-gray-800 rounded p-5"
+            class="md:col-span-4 border-3 border-solid border-gray-800 rounded"
           >
-            <div class="flex flex-wrap items-center">
-              <div class="flex-1">
-                <img
-                  class="rounded-circle"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1ZXGicrI8Z9bmLG1CZzfqrCpUpYqMCZhBg&usqp=CAU&ec=45774421"
-                  alt=""
-                />
-              </div>
-              <div class="ml-4 flex-6">
-                <p>
-                  Teklabspace promises a thorough job discovering
-                  vulnerabilities and tightening system security. Great
-                  communication with very useful results, their penetration
-                  tests provided major insight on some flaws in our system, they
-                  also got us detailed instructions on how we could avoid the
-                  issues detected, and as well improve the overall strength of
-                  the system.
-                </p>
-              </div>
-              <div class="w-full text-right">
-                <span class="text-2xl">Bello Suleiman</span> <br />
-                <span>Product Manager, Thrive Moni</span>
-              </div>
-            </div>
+            <carousel :per-page="1" :mouse-drag="false">
+              <slide class="mx-3">
+                <div class="md:flex bg-white p-5 flex-wrap items-center">
+                  <div class="flex-1">
+                    <img
+                      class="rounded-circle w-32"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1ZXGicrI8Z9bmLG1CZzfqrCpUpYqMCZhBg&usqp=CAU&ec=45774421"
+                      alt=""
+                    />
+                  </div>
+                  <div class="md:ml-4 flex-6 mt-2">
+                    <p>
+                      Teklabspace promises a thorough job discovering
+                      vulnerabilities and tightening system security. Great
+                      communication with very useful results, their penetration
+                      tests provided major insight on some flaws in our system,
+                      they also got us detailed instructions on how we could
+                      avoid the issues detected, and as well improve the overall
+                      strength of the system.
+                    </p>
+                  </div>
+                  <div class="w-full md:text-right">
+                    <span class="text-2xl">Bello Suleiman</span> <br />
+                    <span>Product Manager, Thrive Moni</span>
+                  </div>
+                </div>
+              </slide>
+              <slide class="mx-3">
+                <div class="md:flex bg-white p-5 flex-wrap items-center">
+                  <div class="flex-1">
+                    <img
+                      class="rounded-circle w-32"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1ZXGicrI8Z9bmLG1CZzfqrCpUpYqMCZhBg&usqp=CAU&ec=45774421"
+                      alt=""
+                    />
+                  </div>
+                  <div class="md:ml-4 flex-6 mt-2">
+                    <p>
+                      Teklabspace promises a thorough job discovering
+                      vulnerabilities and tightening system security. Great
+                      communication with very useful results, their penetration
+                      tests provided major insight on some flaws in our system,
+                      they also got us detailed instructions on how we could
+                      avoid the issues detected, and as well improve the overall
+                      strength of the system.
+                    </p>
+                  </div>
+                  <div class="w-full md:text-right">
+                    <span class="text-2xl">Bello Suleiman</span> <br />
+                    <span>Product Manager, Thrive Moni</span>
+                  </div>
+                </div>
+              </slide>
+              <slide class="mx-3">
+                <div class="md:flex bg-white p-5 flex-wrap items-center">
+                  <div class="flex-1">
+                    <img
+                      class="rounded-circle w-32"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1ZXGicrI8Z9bmLG1CZzfqrCpUpYqMCZhBg&usqp=CAU&ec=45774421"
+                      alt=""
+                    />
+                  </div>
+                  <div class="md:ml-4 flex-6 mt-2">
+                    <p>
+                      Teklabspace promises a thorough job discovering
+                      vulnerabilities and tightening system security. Great
+                      communication with very useful results, their penetration
+                      tests provided major insight on some flaws in our system,
+                      they also got us detailed instructions on how we could
+                      avoid the issues detected, and as well improve the overall
+                      strength of the system.
+                    </p>
+                  </div>
+                  <div class="w-full md:text-right">
+                    <span class="text-2xl">Bello Suleiman</span> <br />
+                    <span>Product Manager, Thrive Moni</span>
+                  </div>
+                </div>
+              </slide>
+            </carousel>
           </div>
-          <div class="p-5">
+          <div class="p-5 hidden md:block">
             <i class="fas fa-arrow-circle-right text-pink-600 fa-3x"></i>
           </div>
         </div>
       </div>
-      <div class="controllers">
+      <!-- <div class="controllers">
         <span></span>
         <span></span>
         <span></span>
         <span class="active"></span>
-      </div>
+      </div> -->
     </div>
     <div class="bg-white p-5">
       <div class="flex justify-center">
         <hr class="divider" />
       </div>
       <p class="text-center text-3xl font-bold">Our Blog</p>
-      <div class="grid grid-cols-5">
-        <div class="col-span-3 col-start-2">
-          <div class="flex items-center">
+      <div class="grid grid-cols-1 md:grid-cols-5">
+        <div class="md:col-span-3 md:col-start-2">
+          <div class="md:flex items-center text-center md:text-left">
             <div class="flex-1">
               <p class="text-3xl font-bold">
                 Hey there, Check <br />
@@ -179,28 +249,28 @@
         </div>
       </div>
     </div>
-    <div class="bg-yellow-50 p-5">
+    <div class="bg-yellow-50 p-3 md:p-5">
       <div class="flex justify-center">
         <hr class="divider" />
       </div>
       <p class="text-center text-3xl font-bold">Our Videos</p>
-      <div class="grid grid-cols-6">
-        <div class="col-span-4 col-start-2">
-          <div class="flex">
-            <div class="flex-1 flex justify-end mx-1">
+      <div class="grid md:grid-cols-6">
+        <div class="md:col-span-4 md:col-start-2">
+          <div class="md:flex flex-wrap">
+            <div class="flex-1 flex justify-start m-1">
               <div
                 class="relative rounded h-64 w-full video"
                 style="
-                  background-image: url('https://recordstoreday.com/Photo/418460158312');
+                  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxA-9bY8y5yeG2RtJWG7V36Kvvj5ozi5TvSA&usqp=CAU');
                 "
               >
                 <i class="fas fa-play-circle fa-3x text-yellow-500"></i>
                 <div class="absolute bottom-0 bg-black w-full text-white p-3">
-                  <p>About the TeklabSpace</p>
+                  <p>Our Testimonials</p>
                 </div>
               </div>
             </div>
-            <div class="flex-1 flex justify-start">
+            <div class="flex-1 flex justify-start m-1">
               <div
                 class="relative rounded h-64 w-full video"
                 style="
@@ -217,7 +287,7 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-4">
+    <div class="grid md:grid-cols-4">
       <div class="col-span-2 col-start-2">
         <div class="flex p-5 justify-between">
           <div class="text-center">
