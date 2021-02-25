@@ -32,7 +32,7 @@
               </div>
             </div>
           </div>
-          <b-btn class="mt-3 bg-pink w-full" to="/researcher">
+          <b-btn class="mt-3 bg-pink w-full" to="/get-started">
             Create Account
           </b-btn>
         </div>

@@ -26,8 +26,8 @@ const routes = [
     },
   },
   {
-    path: "/researcher",
-    name: "researcher",
+    path: "/get-started",
+    name: "getstarted",
     component: () => {
       return import("../views/researchersignup.vue");
     },

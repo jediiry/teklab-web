@@ -60,7 +60,10 @@
           >Contact Us</router-link
         >
       </div>
-      <b-btn class="ml-5 bg-pink" to="/sign-in"> Login </b-btn>
+      <div>
+        <b-btn class="ml-5 bg-pink" to="/sign-in"> Login </b-btn>
+        <b-btn class="ml-2 bg-pink" to="/signup"> Get Started </b-btn>
+      </div>
     </div>
   </div>
 </template>
