@@ -13,10 +13,27 @@
         /><b-btn class="rounded-0 bg-pink">Subscribe</b-btn>
       </div>
       <div class="mt-6">
-        <i class="fab fa-facebook mx-2 fa-2x"></i>
-        <i class="fab fa-instagram mx-2 fa-2x"></i>
-        <i class="fab fa-twitter mx-2 fa-2x"></i>
-        <i class="fab fa-youtube mx-2 fa-2x"></i>
+        <a class="text-white" href="https://web.facebook.com/teklabspace"
+          ><i class="fab fa-facebook mx-2 fa-2x"></i
+        ></a>
+        <a class="text-white" href="https://twitter.com/teklabspace">
+          <i class="fab fa-instagram mx-2 fa-2x"></i
+        ></a>
+        <a class="text-white" href="https://www.instagram.com/teklabspace"
+          ><i class="fab fa-twitter mx-2 fa-2x"></i
+        ></a>
+        <a
+          class="text-white"
+          href="https://www.linkedin.com/company/teklabspace"
+        >
+          <i class="fab fa-linkedin mx-2 fa-2x"></i
+        ></a>
+        <a
+          class="text-white"
+          href="https://www.youtube.com/channel/UCnX3UuDJUi5fZC9RyjRjcVg"
+        >
+          <i class="fab fa-youtube mx-2 fa-2x"></i
+        ></a>
       </div>
     </div>
     <div class="md:col-span-1 text-sm text-gray-500">
