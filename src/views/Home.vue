@@ -264,10 +264,18 @@
                   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxA-9bY8y5yeG2RtJWG7V36Kvvj5ozi5TvSA&usqp=CAU');
                 "
               >
-                <i class="fas fa-play-circle fa-3x text-yellow-500"></i>
-                <div class="absolute bottom-0 bg-black w-full text-white p-3">
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/uBvYFNR5wvw"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+
+                <!-- <i class="fas fa-play-circle fa-3x text-yellow-500"></i> -->
+                <!-- <div class="absolute bottom-0 bg-black w-full text-white p-3">
                   <p>Our Testimonials</p>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="flex-1 flex justify-start m-1">
@@ -277,18 +285,25 @@
                   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxA-9bY8y5yeG2RtJWG7V36Kvvj5ozi5TvSA&usqp=CAU');
                 "
               >
-                <i class="fas fa-play-circle fa-3x text-yellow-500"></i>
-                <div class="absolute bottom-0 bg-black w-full text-white p-3">
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/M8IPTJdQ7uk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <!-- <i class="fas fa-play-circle fa-3x text-yellow-500"></i> -->
+                <!-- <div class="absolute bottom-0 bg-black w-full text-white p-3">
                   <p>Our Testimonials</p>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="grid md:grid-cols-4">
-      <div class="col-span-2 col-start-2">
+    <div class="grid md:grid-cols-6 background">
+      <div class="col-span-4 col-start-2">
         <div class="flex p-5 justify-between">
           <div class="text-center">
             <h2 class="text-4xl font-bold">100</h2>
@@ -355,5 +370,10 @@ export default {
   position: absolute;
   right: 10%;
   top: 20%;
+}
+.background {
+  background: url("../assets/img/backkk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 </style>

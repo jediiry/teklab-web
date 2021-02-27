@@ -1,11 +1,12 @@
 <template>
   <div class="banner__container">
     <img
-      src="../../assets/img/imagebanner.png"
+      :src="require(`@/assets/img/${img}`)"
       alt="Snow"
       style="width: 100%; height: 100%"
     />
     <div class="bottom-right italic">{{ date }}</div>
+
     <div class="centered">
       <h1 class="mb-2 font-bold">{{ title }}</h1>
       <p>{{ subtitle }}</p>

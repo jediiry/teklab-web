@@ -45,7 +45,11 @@
     <div class="md:col-span-1 text-sm text-gray-500">
       <p class="font-bold text-2xl text-white">Useful Links</p>
       <p>How it works (Researchers)</p>
-      <p>How it works (Company)</p>
+      <p>
+        <router-link class="route" to="/company-service"
+          >How it works (Company)</router-link
+        >
+      </p>
       <p>Hall of Fame</p>
       <p>Learn to Hack</p>
       <p>
