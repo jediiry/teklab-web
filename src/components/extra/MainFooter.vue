@@ -1,11 +1,11 @@
 <template>
   <div
-    class="grid grid-cols-1 md:grid-cols-5 bg-gray-900 gap-10 text-white p-5 md:p-20"
+    class="grid grid-cols-1 md:grid-cols-10 bg-gray-900 gap-10 text-white p-5 md:p-20"
   >
-    <div class="md:col-span-2">
+    <div class="md:col-span-3 md:col-start-2">
       <p class="text-5xl font-bold">Stay Connected</p>
       <p>Join over 500+ people who receive our weekly newsletters</p>
-      <div class="flex">
+      <div class="flex w-80">
         <input
           type="text"
           placeholder="Your email address"
@@ -36,22 +36,36 @@
         ></a>
       </div>
     </div>
-    <div class="md:col-span-1 text-sm text-gray-500">
+    <div class="md:col-span-2 text-sm text-gray-500">
       <p class="font-bold text-2xl text-white">Contact Us</p>
       <p>Office Address: Ikoyi, Lagos, Nigeria</p>
-      <p>Phone: +234-703-100-6005 (SMS)</p>
-      <p>Email: +info@teklabspace.com</p>
+      <p>Phone: +234-(0)8089397019 (SMS)</p>
+      <p>Email: info@teklabspace.com</p>
     </div>
-    <div class="md:col-span-1 text-sm text-gray-500">
+    <div class="md:col-span-2 text-sm text-gray-500">
       <p class="font-bold text-2xl text-white">Useful Links</p>
-      <p>How it works (Researchers)</p>
+
+      <p>
+        <router-link class="route" to="/researcher"
+          >How it works (Researchers)</router-link
+        >
+      </p>
       <p>
         <router-link class="route" to="/company-service"
           >How it works (Company)</router-link
         >
       </p>
-      <p>Hall of Fame</p>
-      <p>Learn to Hack</p>
+      <p>
+        <a href="https://teklabspacehacker.netlify.app/leadership" class="route"
+          >Hall of Fame</a
+        >
+      </p>
+
+      <p>
+        <router-link class="route" to="/hack-collage"
+          >Learn to Hack</router-link
+        >
+      </p>
       <p>
         <router-link class="route" to="/hack-collage">Hack Collage</router-link>
       </p>
@@ -61,12 +75,19 @@
         >
       </p>
     </div>
-    <div class="md:col-span-1 text-sm text-gray-500">
+    <div class="md:col-span-2 text-sm text-gray-500">
       <p class="font-bold text-2xl text-white">TEKLABSPACE</p>
       <p><router-link class="route" to="/about">About Us</router-link></p>
       <p><router-link class="route" to="/careers">Career</router-link></p>
-      <p>Newsletter</p>
-      <p>Privacy policy</p>
+      <p>
+        <router-link class="route" to="/code-of-conduct"
+          >Code of conduct</router-link
+        >
+      </p>
+      <p>
+        <router-link class="route" to="/sla">SLA</router-link>
+      </p>
+
       <p>
         <router-link class="route" to="/terms-condition"
           >Terms and Conditions</router-link
@@ -90,6 +111,6 @@ export default {
 <style>
 .route {
   text-decoration: none;
-  color: rgb(112, 112, 112);
+  color: #486b6c;
 }
 </style>

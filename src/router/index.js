@@ -99,7 +99,7 @@ const routes = [
     component: () => import("../views/CodeConduct.vue"),
   },
   {
-    path: "/service-level-agreement",
+    path: "/sla",
     name: "ServiceLevelAgreement",
     component: () => import("../views/ServiceLevelAgreement.vue"),
   },

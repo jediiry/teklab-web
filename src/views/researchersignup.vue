@@ -54,8 +54,14 @@
             <div class="flex mt-4 items-end">
               <div class="text-xs text-left">
                 <input type="checkbox" />
-                By clicking sign up, you hereby are in agreement with our Terms
-                & Conditions and Disclaimer
+                By clicking sign up, you hereby are in agreement with our
+                <router-link class="text-red-500" to="/terms-condition"
+                  >Terms & Conditions</router-link
+                >
+                and
+                <router-link class="text-red-500" to="/code-of-conduct"
+                  >Code of conduct</router-link
+                >
               </div>
               <!-- <div class="text-xs text-danger" @click="router('/forget')">
                 Forgot password?

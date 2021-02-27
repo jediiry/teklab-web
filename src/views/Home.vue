@@ -1,25 +1,27 @@
 <template>
   <div>
     <navbar></navbar>
-    <div class="h-screen bg-pink-50 flex items-center">
+    <div class="md:h-screen bg-pink-50 flex items-center py-10">
       <div class="grid">
         <div class="grid grid-cols-9 gap-10 md:items-end">
           <div class="col-span-6 col-start-2 md:col-start-2 md:col-span-4">
             <div>
-              <h2 class="text-5xl md:text-6xl font-bold">
+              <h2 class="text-4xl md:text-6xl font-bold">
                 Africa’s <span class="text-green-600">First</span> Ethical
                 <br />
                 Hacking and Crowdsourced <br />
                 Security platform
               </h2>
-              <p class="text-xs md:text-2xl mt-5">
+              <p class="text-md md:text-2xl md:mt-5">
                 Cyber criminals are evolving in their activities and there is a
                 need for an advancement in the way organizations deal with these
                 threats. Harness the power of crowd source security to deal with
                 these threats and fix security vulnerabilities.
               </p>
-              <div class="mt-5">
-                <b-btn size="lg" class="pink-btn mr-3 my-2">Get Started</b-btn>
+              <div class="md:mt-5">
+                <b-btn size="lg" to="/signup" class="pink-btn mr-3 my-2"
+                  >Get Started</b-btn
+                >
                 <b-btn
                   size="lg"
                   class="pink-btn-outline"
@@ -42,24 +44,42 @@
     </div>
     <div class="bg-white p-5">
       <p class="text-center text-3xl font-bold">Trusted Partners</p>
-      <div class="flex justify-evenly mt-5">
-        <carousel :per-page="4" :mouse-drag="false">
-          <slide class="mx-3">
-            <img src="../assets/img/3.svg" class="h-12" alt="" />
-          </slide>
-          <slide class="mx-3">
-            <img src="../assets/img/5.svg" class="h-12" alt="" />
-          </slide>
-          <slide class="mx-3">
-            <img src="../assets/img/1.svg" class="h-12" alt="" />
-          </slide>
-          <slide class="mx-3">
-            <img src="../assets/img/4.svg" class="h-12" alt="" />
-          </slide>
-          <slide class="mx-3">
-            <img src="../assets/img/2.svg" class="h-12" alt="" />
-          </slide>
-        </carousel>
+      <div class="flex justify-center mt-5 w-100">
+        <div class="w-50">
+          <carousel
+            :touchDrag="false"
+            :autoWidth="true"
+            :autoplay="true"
+            :autoplaySpeed="3"
+            :loop="true"
+            :margin="20"
+            :nav="false"
+            :items="3"
+          >
+            <img src="../assets/img/3.svg" class="h-12 mx-5" alt="" />
+            <img src="../assets/img/5.svg" class="h-12 mx-5" alt="" />
+            <img src="../assets/img/1.svg" class="h-12 mx-5" alt="" />
+            <img src="../assets/img/4.svg" class="h-12 mx-5" alt="" />
+            <img src="../assets/img/2.svg" class="h-12 mx-5" alt="" />
+          </carousel>
+        </div>
+        <!-- <swiper :slides-per-view="4" :space-between="50" virtual>
+          <swiper-slide>
+            <img src="../assets/img/3.svg" class="h-12" alt=""
+          /></swiper-slide>
+          <swiper-slide>
+            <img src="../assets/img/5.svg" class="h-12" alt=""
+          /></swiper-slide>
+          <swiper-slide>
+            <img src="../assets/img/1.svg" class="h-12" alt=""
+          /></swiper-slide>
+          <swiper-slide>
+            <img src="../assets/img/4.svg" class="h-12" alt=""
+          /></swiper-slide>
+          <swiper-slide>
+            <img src="../assets/img/2.svg" class="h-12" alt=""
+          /></swiper-slide>
+        </swiper> -->
       </div>
     </div>
     <div class="bg-gray-100 px-3 md:p-10">
@@ -74,9 +94,7 @@
       </p>
       <div class="md:px-10 py-3">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <div
-            class="bg-white border-3 border-solid border-gray-800 rounded p-5"
-          >
+          <div class="cardstyle">
             <img src="../assets/img/Icon1.svg" alt="" />
             <p class="text-xl font-bold mt-3">
               Vulnerability Assessment and Penetration Testing
@@ -86,15 +104,13 @@
               designed to identify and help address cyber security exposures on
               your organization digital assets.
             </p>
-            <b-btn variant="transparent" to="/how-it-works"
+            <b-btn variant="transparent" to="/vapt"
               ><span class="text-pink-600"
                 >Learn More <i class="fas fa-arrow-circle-right"></i
               ></span>
             </b-btn>
           </div>
-          <div
-            class="bg-white border-3 border-solid border-gray-800 rounded p-5"
-          >
+          <div class="cardstyle">
             <img src="../assets/img/Icon2.svg" alt="" />
             <p class="text-xl font-bold mt-3">
               Vulnerability Disclosure Program
@@ -105,15 +121,13 @@
               system without legal action carried out against them for finding
               and reporting these issues to you.
             </p>
-            <b-btn variant="transparent" to="/vapt"
+            <b-btn variant="transparent" to="/how-it-works"
               ><span class="text-pink-600"
                 >Learn More <i class="fas fa-arrow-circle-right"></i
               ></span>
             </b-btn>
           </div>
-          <div
-            class="bg-white border-3 border-solid border-gray-800 rounded p-5"
-          >
+          <div class="cardstyle">
             <img src="../assets/img/Icon3.svg" alt="" />
             <p class="text-xl font-bold mt-3">Bug Bounty Program</p>
             <p>
@@ -142,90 +156,83 @@
       <div class="md:p-3">
         <div class="grid grid-cols-1 md:grid-cols-6 gap-10">
           <div class="p-5 hidden md:block">
-            <i class="fas fa-arrow-circle-left text-gray-300 fa-3x"></i>
+            <i
+              class="fas fa-arrow-circle-left text-gray-300 fa-3x"
+              @click.prevent="next"
+            ></i>
           </div>
           <div
             class="md:col-span-4 border-3 border-solid border-gray-800 rounded"
           >
-            <carousel :per-page="1" :mouse-drag="false">
-              <slide class="mx-3">
-                <div class="md:flex bg-white p-5 flex-wrap items-center">
-                  <div class="flex-1">
-                    <img
-                      class="rounded-circle w-32"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1ZXGicrI8Z9bmLG1CZzfqrCpUpYqMCZhBg&usqp=CAU&ec=45774421"
-                      alt=""
-                    />
-                  </div>
-                  <div class="md:ml-4 flex-6 mt-2">
-                    <p>
-                      Teklabspace promises a thorough job discovering
-                      vulnerabilities and tightening system security. Great
-                      communication with very useful results, their penetration
-                      tests provided major insight on some flaws in our system,
-                      they also got us detailed instructions on how we could
-                      avoid the issues detected, and as well improve the overall
-                      strength of the system.
-                    </p>
-                  </div>
-                  <div class="w-full md:text-right">
-                    <span class="text-2xl">Bello Suleiman</span> <br />
-                    <span>Product Manager, Thrive Moni</span>
-                  </div>
+            <carousel
+              :touchDrag="true"
+              :autoplay="true"
+              :autoplaySpeed="3"
+              :loop="true"
+              :margin="20"
+              :nav="false"
+              :items="1"
+              ref="carousel"
+            >
+              <div class="md:flex bg-white p-5 flex-wrap items-center">
+                <div class="flex-2 flex justify-center">
+                  <div class="h-36 w-36 rounded-circle bg-green-600"></div>
+                  <!-- <img
+                    class="rounded-circle w-full"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1ZXGicrI8Z9bmLG1CZzfqrCpUpYqMCZhBg&usqp=CAU&ec=45774421"
+                    alt=""
+                  /> -->
                 </div>
-              </slide>
-              <slide class="mx-3">
-                <div class="md:flex bg-white p-5 flex-wrap items-center">
-                  <div class="flex-1">
-                    <img
-                      class="rounded-circle w-32"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1ZXGicrI8Z9bmLG1CZzfqrCpUpYqMCZhBg&usqp=CAU&ec=45774421"
-                      alt=""
-                    />
-                  </div>
-                  <div class="md:ml-4 flex-6 mt-2">
-                    <p>
-                      Teklabspace promises a thorough job discovering
-                      vulnerabilities and tightening system security. Great
-                      communication with very useful results, their penetration
-                      tests provided major insight on some flaws in our system,
-                      they also got us detailed instructions on how we could
-                      avoid the issues detected, and as well improve the overall
-                      strength of the system.
-                    </p>
-                  </div>
-                  <div class="w-full md:text-right">
-                    <span class="text-2xl">Bello Suleiman</span> <br />
-                    <span>Product Manager, Thrive Moni</span>
-                  </div>
+                <div class="flex-5 mt-2">
+                  <p class="text-xl">
+                    Teklabspace promises a thorough job discovering
+                    vulnerabilities and tightening system security. Great
+                    communication with very useful results, their penetration
+                    tests provided major insight on some flaws in our system,
+                    they also got us detailed instructions on how we could avoid
+                    the issues detected, and as well improve the overall
+                    strength of the system.
+                  </p>
                 </div>
-              </slide>
-              <slide class="mx-3">
-                <div class="md:flex bg-white p-5 flex-wrap items-center">
-                  <div class="flex-1">
-                    <img
-                      class="rounded-circle w-32"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD1ZXGicrI8Z9bmLG1CZzfqrCpUpYqMCZhBg&usqp=CAU&ec=45774421"
-                      alt=""
-                    />
-                  </div>
-                  <div class="md:ml-4 flex-6 mt-2">
-                    <p>
-                      Teklabspace promises a thorough job discovering
-                      vulnerabilities and tightening system security. Great
-                      communication with very useful results, their penetration
-                      tests provided major insight on some flaws in our system,
-                      they also got us detailed instructions on how we could
-                      avoid the issues detected, and as well improve the overall
-                      strength of the system.
-                    </p>
-                  </div>
-                  <div class="w-full md:text-right">
-                    <span class="text-2xl">Bello Suleiman</span> <br />
-                    <span>Product Manager, Thrive Moni</span>
-                  </div>
+                <div class="w-full md:text-right">
+                  <span class="text-2xl font-bold">Bello Suleiman</span> <br />
+                  <span>Product Manager, Thrive Moni</span>
                 </div>
-              </slide>
+              </div>
+              <div class="md:flex bg-white p-5 flex-wrap items-center">
+                <div class="flex-2 flex justify-center">
+                  <div class="h-36 w-36 rounded-circle bg-pink-600"></div>
+                </div>
+                <div class="flex-5 mt-2">
+                  <p class="text-xl">
+                    “When we were looking to meet compliance and make sure there
+                    are no loop holes in our application before launching to
+                    production that was when Teklabsapace came in and carried a
+                    thorough VAPT on our application. The results in the report
+                    helps us to prevent future reoccurence,”
+                  </p>
+                </div>
+                <div class="w-full md:text-right">
+                  <span class="text-2xl font-bold">Bayo</span> <br />
+                  <span>CTO, Clear Codes Lab</span>
+                </div>
+              </div>
+              <div class="md:flex bg-white p-5 flex-wrap items-center">
+                <div class="flex-2 flex justify-center">
+                  <div class="h-36 w-36 rounded-circle maincolor"></div>
+                </div>
+                <div class="flex-5 mt-2">
+                  <p class="text-xl">
+                    I've never seen such a thorough and exhaustive VAPT scan as
+                    the one that was provided by Teklabspace. The results
+                    provided a-lot of insights and was very detailed .
+                  </p>
+                </div>
+                <div class="w-full md:text-right">
+                  <span class="text-2xl font-bold">Bolu</span> <br />
+                  <span>CTO, Metisbay</span>
+                </div>
+              </div>
             </carousel>
           </div>
           <div class="p-5 hidden md:block">
@@ -263,7 +270,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-yellow-50 p-3 md:p-5">
+    <div class="bg-yellow-50 p-10 md:py-20 md:px-5">
       <div class="flex justify-center">
         <hr class="divider" />
       </div>
@@ -344,11 +351,18 @@
 <script>
 import navbar from "@/components/extra/navbar";
 import MainFooter from "@/components/extra/MainFooter";
+
 export default {
   name: "home",
   components: {
     navbar,
     MainFooter,
+  },
+  methods: {
+    next() {
+      let a = this.$refs.carousel;
+      console.log(a);
+    },
   },
 };
 </script>
@@ -389,5 +403,17 @@ export default {
   background: url("../assets/img/backkk.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 40px;
+}
+.cardstyle {
+  background-color: white;
+  padding: 4rem;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+.maincolor {
+  background-color: #da04f2;
 }
 </style>
