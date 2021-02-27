@@ -26,6 +26,20 @@ const routes = [
     },
   },
   {
+    path: "/vapt",
+    name: "vapt",
+    component: () => {
+      return import("../views/vapt.vue");
+    },
+  },
+  {
+    path: "/bounty",
+    name: "bounty",
+    component: () => {
+      return import("../views/bounty.vue");
+    },
+  },
+  {
     path: "/get-started",
     name: "getstarted",
     component: () => {

@@ -1,34 +1,42 @@
 <template>
   <div>
-    <div class="h-screen grid grid-rows-3 bg-pink-50">
-      <div>
-        <navbar></navbar>
-      </div>
-      <div class="grid grid-cols-9 gap-10 md:items-center">
-        <div class="col-span-6 col-start-2 md:col-start-2 md:col-span-4">
-          <h2 class="text-3xl md:text-5xl font-bold">
-            Africa’s <span class="text-green-600">First</span> Ethical Hacking
-            and Crowdsourced Security platform
-          </h2>
-          <p class="text-xs md:text-lg">
-            Cyber criminals are evolving in their activities and there is a need
-            for an advancement in the way organizations deal with these threats.
-            Harness the power of crowd source security to deal with these
-            threats and fix security vulnerabilities.
-          </p>
-          <div>
-            <b-btn class="mx-1 my-2">Get Started</b-btn>
-            <b-btn variant="outline-danger" to="/safe-house-discosure"
-              >Go to Safe House</b-btn
-            >
+    <navbar></navbar>
+    <div class="h-screen bg-pink-50 flex items-center">
+      <div class="grid">
+        <div class="grid grid-cols-9 gap-10 md:items-end">
+          <div class="col-span-6 col-start-2 md:col-start-2 md:col-span-4">
+            <div>
+              <h2 class="text-5xl md:text-6xl font-bold">
+                Africa’s <span class="text-green-600">First</span> Ethical
+                <br />
+                Hacking and Crowdsourced <br />
+                Security platform
+              </h2>
+              <p class="text-xs md:text-2xl mt-5">
+                Cyber criminals are evolving in their activities and there is a
+                need for an advancement in the way organizations deal with these
+                threats. Harness the power of crowd source security to deal with
+                these threats and fix security vulnerabilities.
+              </p>
+              <div class="mt-5">
+                <b-btn size="lg" class="pink-btn mr-3 my-2">Get Started</b-btn>
+                <b-btn
+                  size="lg"
+                  class="pink-btn-outline"
+                  to="/safe-house-discosure"
+                  >Go to Safe House</b-btn
+                >
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-span-3">
-          <img
-            src="../assets/img/main.png"
-            class="w-85 hidden md:block Imagebanner"
-            alt=""
-          />
+          <div class="col-span-3">
+            <img
+              src="../assets/img/main.png"
+              width="45%"
+              class="hidden md:block Imagebanner"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -78,9 +86,11 @@
               designed to identify and help address cyber security exposures on
               your organization digital assets.
             </p>
-            <span class="text-pink-600"
-              >Learn More <i class="fas fa-arrow-circle-right"></i
-            ></span>
+            <b-btn variant="transparent" to="/how-it-works"
+              ><span class="text-pink-600"
+                >Learn More <i class="fas fa-arrow-circle-right"></i
+              ></span>
+            </b-btn>
           </div>
           <div
             class="bg-white border-3 border-solid border-gray-800 rounded p-5"
@@ -95,9 +105,11 @@
               system without legal action carried out against them for finding
               and reporting these issues to you.
             </p>
-            <span class="text-pink-600"
-              >Learn More <i class="fas fa-arrow-circle-right"></i
-            ></span>
+            <b-btn variant="transparent" to="/vapt"
+              ><span class="text-pink-600"
+                >Learn More <i class="fas fa-arrow-circle-right"></i
+              ></span>
+            </b-btn>
           </div>
           <div
             class="bg-white border-3 border-solid border-gray-800 rounded p-5"
@@ -109,9 +121,11 @@
               include some of the largest businesses. Bug bounties are one way
               to help your business avoid the headlines.
             </p>
-            <span class="text-pink-600"
-              >Learn More <i class="fas fa-arrow-circle-right"></i
-            ></span>
+            <b-btn variant="transparent" to="/bounty"
+              ><span class="text-pink-600"
+                >Learn More <i class="fas fa-arrow-circle-right"></i
+              ></span>
+            </b-btn>
           </div>
         </div>
       </div>

@@ -81,3 +81,21 @@ input:active,
 input:focus {
   outline: none;
 }
+.pink-btn {
+  background-color: #da04f2;
+  color: white;
+  border: 3px solid #da04f2;
+}
+.pink-btn:hover {
+  background-color: #a103b3;
+  border: 3px solid #a103b3;
+}
+.pink-btn-outline {
+  background-color: transparent;
+  color: #da04f2;
+  border: 3px solid #da04f2;
+}
+.pink-btn-outline:hover {
+  background-color: #da04f2;
+  color: white;
+}

@@ -92,7 +92,7 @@
           <div>
             <button
               class="bordered-btn font-bold"
-              @click.prevent="$router.push('/how-it-works')"
+              @click.prevent="$router.push('/bounty')"
             >
               How it Works
             </button>
@@ -120,7 +120,7 @@
           <div>
             <button
               class="bordered-btn font-bold"
-              @click.prevent="$router.push('/how-it-works')"
+              @click.prevent="$router.push('/vapt')"
             >
               How it Works
             </button>

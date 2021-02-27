@@ -1,10 +1,15 @@
 <template>
-  <div class="banner__container">
-    <img
+  <div
+    class="banner__container"
+    :style="{
+      'background-image': 'url(' + require(`@/assets/img/${img}`) + ')',
+    }"
+  >
+    <!-- <img
       :src="require(`@/assets/img/${img}`)"
       alt="Snow"
       style="width: 100%; height: 100%"
-    />
+    /> -->
     <div class="bottom-right italic">{{ date }}</div>
 
     <div class="centered">
@@ -18,6 +23,13 @@
 export default {
   name: "ImageBanner",
   props: ["title", "subtitle", "date", "img"],
+  data() {
+    return {
+      bindStyle: {
+        backgroundImage: "",
+      },
+    };
+  },
 };
 </script>
 
@@ -26,10 +38,12 @@ export default {
   position: relative;
   text-align: center;
   color: white;
-  max-height: 350px;
-  height: 350px;
+  max-height: 450px;
+  height: 450px;
   overflow-y: hidden;
-  margin-top: 18px;
+  margin-top: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* .banner__container img {

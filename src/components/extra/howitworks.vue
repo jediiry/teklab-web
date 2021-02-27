@@ -2,12 +2,7 @@
   <div>
     <navbar />
 
-    <image-banner
-      title="HARNESS THE POWER OF CROWD SOURCE"
-      subtitle=""
-      :img="img"
-      date=""
-    ></image-banner>
+    <image-banner :title="header" subtitle="" :img="img" date=""></image-banner>
 
     <div class="p-16">
       <div>
@@ -34,7 +29,7 @@ import MainFooter from "@/components/extra/MainFooter";
 
 export default {
   name: "How",
-  props: ["title", "message", "imageurl", "img"],
+  props: ["title", "message", "imageurl", "img", "header"],
   components: {
     navbar,
     ImageBanner,

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-between md:justify-evenly items-center md:items-end px-3 px-5 pt-3"
+    class="flex justify-between md:justify-evenly items-center md:items-end p-3 pt-3 sticky top-0 z-50 bg-white shadow-md"
   >
     <div>
       <img src="../../assets/img/Logo.svg" class="w-32" alt="" />
@@ -61,8 +61,8 @@
         >
       </div>
       <div>
-        <b-btn class="ml-5 bg-pink" to="/sign-in"> Login </b-btn>
-        <b-btn class="ml-2 bg-pink" to="/signup"> Get Started </b-btn>
+        <b-btn class="ml-5 pink-btn" to="/sign-in"> Login </b-btn>
+        <b-btn class="ml-2 pink-btn-outline" to="/signup"> Get Started </b-btn>
       </div>
     </div>
   </div>

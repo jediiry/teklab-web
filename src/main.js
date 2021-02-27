@@ -2,8 +2,8 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import VueCarousel from 'vue-carousel';
- 
+import VueCarousel from "vue-carousel";
+
 Vue.use(VueCarousel);
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
