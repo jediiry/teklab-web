@@ -4,11 +4,11 @@
     <image-banner
       title="ABOUT US"
       subtitle="Get to know what inspires us, our core values and our Team"
-      img="banner_img.jpg"
+      img="about.png"
       date=""
     ></image-banner>
-    <div class="px-40 py-10">
-      <div class="flex items-center my-5">
+    <div class="px-5 md:px-40 py-10">
+      <div class="md:flex items-center my-5">
         <div class="flex-3">
           <h1 class="title font-bold">What Inspires Us</h1>
           <p class="pt-3 pr-5">
@@ -25,11 +25,11 @@
           <img src="../assets/img/imageone.png" class="w-full" alt="" />
         </div>
       </div>
-      <div class="flex items-center my-5">
-        <div class="flex-2">
+      <div class="md:flex items-center my-5">
+        <div class="flex-2 ">
           <img src="../assets/img/imagetwo.png" class="w-full" alt="" />
         </div>
-        <div class="flex-3 pl-5">
+        <div class="flex-3 md:pl-5 ">
           <h1 class="title font-bold">For Organizations</h1>
           <p class="pt-3 pr-5">
             Our platform enables organizational businesses to effectively
@@ -44,19 +44,19 @@
         </div>
       </div>
     </div>
-    <div class="rel p-10">
+    <div class="rel md:p-10">
       <div class="flex justify-center">
         <hr class="divider" />
       </div>
       <p class="text-center text-3xl font-bold">Our Services</p>
 
       <div class="px-10 py-3">
-        <div class="grid grid-cols-3 gap-5">
+        <div class="grid md:grid-cols-3 gap-5">
           <div
             class="bg-white border-3 border-solid border-gray-800 rounded p-5"
           >
             <div class="flex justify-center">
-              <img src="../assets/img/imagelogo.png" alt="" />
+              <img src="../assets/img/greenicon.png" alt="" />
             </div>
             <p class="text-xl font-bold mt-3 text-center">Reliability</p>
             <p class="text-center">
@@ -69,7 +69,7 @@
             class="bg-white border-3 border-solid border-gray-800 rounded p-5"
           >
             <div class="flex justify-center">
-              <img src="../assets/img/imagelogo.png" alt="" />
+              <img src="../assets/img/blackicon.png" alt="" />
             </div>
             <p class="text-xl font-bold mt-3 text-center">Commitment</p>
             <p class="text-center">
@@ -101,7 +101,7 @@
       <p class="text-center text-3xl font-bold">Meet Our Team</p>
 
       <div class="px-10 py-3 flex justify-center items-center">
-        <div class="grid grid-cols-2 gap-6">
+        <div class="grid md:grid-cols-2 gap-6">
           <div class="text-center">
             <img src="../assets/img/1.png" alt="" />
             <div class="mt-3">
@@ -110,7 +110,7 @@
             </div>
           </div>
           <div class="text-center">
-            <img src="../assets/img/2.png" alt="" />
+            <img src="../assets/img/emma.png" alt="" />
             <div class="mt-3">
               <span class="text-2xl font-bold">Emmanuel Afolabi</span><br />
               <span class="italic">Co-Founder, CTO</span>

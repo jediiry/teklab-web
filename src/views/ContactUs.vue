@@ -4,7 +4,7 @@
         <image-banner 
             title="CONTACT US"
             subtitle="Have any questions to ask? Get in touch with us. We love to hear from you"
-            img="banner_img.jpg"
+            img="contact.png"
             date=""
         ></image-banner>
         <div class="flex justify-center">
@@ -33,7 +33,7 @@
                     </div>
                     <div>
                         <h2 class="my-2 font-bold text-xl text-center">Talk to Us</h2>
-                        <p class="text-sm text-center color-pink">+234-703-100-6005</p>
+                        <p class="text-sm text-center color-pink">+234-(0)8089397019</p>
                     </div>
                 </div>                
             </div>
@@ -50,6 +50,8 @@
                 <div class="mb-3 border w-full px-3 py-2">
                     <select class="w-full">
                         <option value="">I am a Researcher</option>
+                        <option value="">I represent a Company</option>
+                        <option value="">I am an Investor</option>
                     </select>
                 </div>
                 <div class="mb-3 border w-full px-3 py-2">
@@ -65,7 +67,8 @@
                 </div>
 
                 <div class="border w-full">
-                    <button class="px-14 py-3 bg-pink text-white rounded w-full">Submit Message</button>
+                    <button class="px-14 py-3 bg-pink text-white rounded w-full">Submit Message   <i class="fas fa-paper-plane mx-2 "></i
+        ></button>
                 </div>
             </div>
                 </div>

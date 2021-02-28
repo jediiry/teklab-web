@@ -13,8 +13,12 @@
     <div class="bottom-right italic">{{ date }}</div>
 
     <div class="centered px-4">
-      <h1 class="mb-2 font-bold">{{ title }}</h1>
-      <p>{{ subtitle }}</p>
+      <h1 class="mb-2 text-6xl font-bold">{{ title }}</h1>
+      <p class="text-2xl">{{ subtitle }}</p>
+      
+      <div v-if="btn">
+        <b-btn class="pink-btn" :href="btn.url" >{{btn.name}}</b-btn>
+      </div>
     </div>
   </div>
 </template>
@@ -22,7 +26,7 @@
 <script>
 export default {
   name: "ImageBanner",
-  props: ["title", "subtitle", "date", "img"],
+  props: ["title", "subtitle", "date", "img", "btn"],
   data() {
     return {
       bindStyle: {

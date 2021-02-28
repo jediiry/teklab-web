@@ -3,8 +3,8 @@
     <navbar />
     <image-banner
       title="RESEARCHERS"
-      subtitle="Get to know what inspires us, our core values and our Team"
-      img="banner_img.jpg"
+      subtitle=""
+      img="reseacherheader.png"
       date=""
     ></image-banner>
     <div class="p-5 md:p-16">
@@ -37,59 +37,60 @@
 
       <h1 class="font-bold text-center text-4xl my-10">How it Works</h1>
       <div class="grid md:grid-cols-3 grid-rows-2 gap-10">
-        <div class="rounded-md p-6 pt-16 bg-green-50">
-          <div class="mb-3 text-center">
-            <i class="fa fa-glass-martini-alt text-green-600 text-6xl"></i>
-          </div>
-          <p class="text-green-600 text-center font-bold text-base mb-2">
-            Signup on Teklabspace
-          </p>
-          <p class="text-xs text-center">
-            Its easy to create an account. and verify that you are human.
-          </p>
-        </div>
         <div class="rounded-md p-6 pt-16 bg-light-pink">
           <div class="mb-3 text-center">
-            <i class="fa fa-glass-martini-alt color-pink text-6xl"></i>
+            <i class="fas fa-edit color-pink text-6xl"></i>
           </div>
           <p class="color-pink text-center font-bold text-base mb-2">
             Signup on Teklabspace
           </p>
           <p class="text-xs text-center">
-            Its easy to create an account. and verify that you are human.
+           Its easy to create an account. and verify that you are human 
           </p>
         </div>
         <div class="rounded-md p-6 pt-16 bg-green-50">
           <div class="mb-3 text-center">
-            <i class="fa fa-glass-martini-alt text-green-600 text-6xl"></i>
+            <i class="fas fa-handshake text-green-600 text-6xl"></i>
           </div>
           <p class="text-green-600 text-center font-bold text-base mb-2">
-            Signup on Teklabspace
+           Accept the Code of conduct
           </p>
           <p class="text-xs text-center">
-            Its easy to create an account. and verify that you are human.
+            We provide a friendly enviroment for people with diffrent race, culture, religious belife, political affiliation and personal orientation on Teklabspace. We only allow positive vibes and inter personal respect when attempting the rules of engagement
           </p>
         </div>
-        <div class="rounded-md p-6 pt-16 bg-light-pink">
+        <div class="rounded-md p-6 pt-16 bg-gray-50">
           <div class="mb-3 text-center">
-            <i class="fa fa-glass-martini-alt color-pink text-6xl"></i>
+            <i class="fas fa-file-alt text-grey-600 text-6xl"></i>
           </div>
-          <p class="color-pink text-center font-bold text-base mb-2">
-            Signup on Teklabspace
+          <p class="text-gray-600 text-center font-bold text-base mb-2">
+           Check Up open programs
           </p>
           <p class="text-xs text-center">
-            Its easy to create an account. and verify that you are human.
+            As a new user you have limited view to programs listed on the Discouvery after signin. To increase your chance of wild range of program, you can submit security vulnerability on open programs and fufill your KYC
           </p>
         </div>
         <div class="rounded-md p-6 pt-16 bg-green-50">
           <div class="mb-3 text-center">
-            <i class="fa fa-glass-martini-alt text-green-600 text-6xl"></i>
+            <i class="fas fa-file-import text-green-600 text-6xl"></i>
           </div>
           <p class="text-green-600 text-center font-bold text-base mb-2">
-            Signup on Teklabspace
+            Submit a report on Safe House
           </p>
           <p class="text-xs text-center">
-            Its easy to create an account. and verify that you are human.
+            
+Found something in the wild and dont know how to go about it. Teklabspace provide a secured and safe way to reachout to the organization without any legal action against the hacker. Take advatantage of this featuure.
+          </p>
+        </div>
+        <div class="rounded-md p-6 pt-16 bg-gray-50">
+          <div class="mb-3 text-center">
+            <i class="fa fa-glass-martini-alt text-gray-600 text-6xl"></i>
+          </div>
+          <p class="text-gray-600 text-center font-bold text-base mb-2">
+            Get recommended by Teklabspace
+          </p>
+          <p class="text-xs text-center">
+            Submit verified report and be invited for a drink on a round table. Be consistent in submiting valid report on programs.
           </p>
         </div>
       </div>

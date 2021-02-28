@@ -3,13 +3,14 @@
         <navbar/>
         <image-banner 
             title="SAFE HOUSE DISCLOSURE ASSISTANCE"
-            subtitle="To ensure that we server you better, we created our code of conduct. Kindly read through and agree before sign up to our services"
-            img="banner_img.jpg"
+            subtitle="If you found Something, say It"
+            img="safehouse.png"
             date=""
+            :btn="{name:'Submit a Report', url:'https://teklabspacehacker.netlify.app/program/submit' }"
         ></image-banner>
-        <div class="flex justify-center mb-5">
-            <div class="flex">
-                <div class="bg-white shadow-md my-3 p-4 w-72 rounded transform -translate-y-24 mr-4">
+        <div class="flex justify-center md:mb-5">
+            <div class="md:flex transform -translate-y-24 ">
+                <div class="bg-white shadow-md my-3 p-4 w-72 rounded  mr-4">
                     <div class="flex justify-center">
                         <img class="w-16" src="../assets/img/safe_house_icon.svg" alt="">
                     </div>
@@ -20,7 +21,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-white shadow-md my-3 p-4 w-72 rounded transform -translate-y-24">
+                <div class="bg-white shadow-md my-3 p-4 w-72 rounded">
                     <div class="flex justify-center">
                         <img class="w-16" src="../assets/img/safe_house_icon2.svg" alt="">
                     </div>
@@ -33,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="page__content px-5">
+        <div class="page__content px-4 -mt-24">
             <div class="mb-3">
                 <h1 class="color-pink mb-1 text-lg font-bold">
                     What is Safe House Disclosure Assistance?
@@ -67,7 +68,7 @@
                 <span class="font-italic text-sm">Last updated on 16th January, 2021</span>
             </div>
             <div class="flex justify-center mb-20">
-                <button class="px-14 py-3 bg-pink text-white rounded">Submit a Report</button>
+                <b-btn href="https://teklabspacehacker.netlify.app/program/submit" class="pink-btn text-white ">Submit a Report</b-btn>
             </div>
         </div>
         <main-footer></main-footer>
