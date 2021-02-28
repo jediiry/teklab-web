@@ -45,7 +45,7 @@
     <div class="bg-white p-5">
       <p class="text-center text-3xl font-bold">Trusted Partners</p>
       <div class="flex justify-center mt-5 w-100">
-        <div class="w-100 md:w-2/3">
+        <div class="w-full md:w-2/3">
           <carousel
             :touchDrag="false"
             :autoWidth="true"

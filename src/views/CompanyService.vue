@@ -101,7 +101,7 @@
       </div>
 
       <div class="grid md:grid-cols-2 my-16 gap-16">
-        <div class="col-span-1 flex flex-col justify-center py-4 order-1 md:order-2">
+        <div class="col-span-1 flex flex-col justify-center py-4 order-2 md:order-2">
           <h2 class="color-pink mb-2 font-bold">TEKLABSPACE VAPT</h2>
           <h3 class="text-uppercase mb-3 font-bold text-base underline">
             PREMIUM PENTESTS TO MAINTAIN COMPLIANCE
@@ -126,7 +126,7 @@
             </button>
           </div>
         </div>
-        <div class="col-span-1 order-2 md:order-1">
+        <div class="col-span-1 order-1 md:order-1">
           <img src="../assets/img/sec3.png" alt="" />
         </div>
       </div>
