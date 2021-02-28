@@ -5,7 +5,7 @@
     <div class="md:col-span-3 md:col-start-2">
       <p class="text-5xl font-bold">Stay Connected</p>
       <p>Join over 500+ people who receive our weekly newsletters</p>
-      <div class="flex w-80">
+      <div class="flex w-4/5">
         <input
           type="text"
           placeholder="Your email address"
