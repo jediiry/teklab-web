@@ -3,7 +3,7 @@
     class="flex justify-between md:justify-evenly items-center md:items-end p-3 pt-3 sticky top-0 z-50 bg-white shadow-md"
   >
     <div>
-      <img src="../../assets/img/Logo.svg" class="w-32" alt="" />
+      <img src="../../assets/img/Logo.svg" class="w-24" alt="" />
     </div>
     <div class="mobilemenu">
       <i class="fas fa-bars" v-b-toggle.sidebar-1 style="font-size: 30px"></i>
