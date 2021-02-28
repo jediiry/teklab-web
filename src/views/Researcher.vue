@@ -7,7 +7,7 @@
       img="banner_img.jpg"
       date=""
     ></image-banner>
-    <div class="p-16">
+    <div class="p-5 md:p-16">
       <div>
         <h1 class="text-xl font-bold color-pink mb-1">
           ACT NOW TO STAY AHEAD OF THREATS
@@ -36,7 +36,7 @@
       </div>
 
       <h1 class="font-bold text-center text-4xl my-10">How it Works</h1>
-      <div class="grid grid-cols-3 grid-rows-2 gap-10">
+      <div class="grid md:grid-cols-3 grid-rows-2 gap-10">
         <div class="rounded-md p-6 pt-16 bg-green-50">
           <div class="mb-3 text-center">
             <i class="fa fa-glass-martini-alt text-green-600 text-6xl"></i>

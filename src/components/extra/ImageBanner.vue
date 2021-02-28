@@ -12,7 +12,7 @@
     /> -->
     <div class="bottom-right italic">{{ date }}</div>
 
-    <div class="centered">
+    <div class="centered px-4">
       <h1 class="mb-2 font-bold">{{ title }}</h1>
       <p>{{ subtitle }}</p>
     </div>

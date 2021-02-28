@@ -7,9 +7,9 @@
       img="banner_img.jpg"
       date=""
     ></image-banner>
-    <div class="p-16">
+    <div class="p-5 md:p-16">
       <div>
-        <h1 class="text-xl font-bold color-pink mb-1">
+        <h1 class="text-2xl font-bold color-pink mb-1">
           ACT NOW TO STAY AHEAD OF THREATS
         </h1>
         <p>
@@ -34,8 +34,8 @@
           is the future of cybersecurity. It begins right here.
         </p>
       </div>
-      <div class="grid grid-cols-2 my-16 gap-16">
-        <div class="col-span-1 flex flex-col justify-center py-4">
+      <div class="grid md:grid-cols-2 my-16 gap-16">
+        <div class="col-span-1 flex flex-col justify-center py-4 order-1 md:order-2">
           <h2 class="color-pink mb-2 font-bold">TEKLABSPACE VDP</h2>
           <h3 class="text-uppercase mb-3 font-bold text-base underline">
             Respond Quickly To Security Flaws
@@ -60,12 +60,12 @@
             </button>
           </div>
         </div>
-        <div class="col-span-1">
+        <div class="col-span-1 order-2 md:order-1">
           <img src="../assets/img/service_img.png" alt="" />
         </div>
       </div>
 
-      <div class="grid grid-cols-2 my-16 gap-16">
+      <div class="grid md:grid-cols-2 my-16 gap-16">
         <div class="col-span-1">
           <img src="../assets/img/secimg.png" alt="" />
         </div>
@@ -100,8 +100,8 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 my-16 gap-16">
-        <div class="col-span-1 flex flex-col justify-center py-4">
+      <div class="grid md:grid-cols-2 my-16 gap-16">
+        <div class="col-span-1 flex flex-col justify-center py-4 order-1 md:order-2">
           <h2 class="color-pink mb-2 font-bold">TEKLABSPACE VAPT</h2>
           <h3 class="text-uppercase mb-3 font-bold text-base underline">
             PREMIUM PENTESTS TO MAINTAIN COMPLIANCE
@@ -126,7 +126,7 @@
             </button>
           </div>
         </div>
-        <div class="col-span-1">
+        <div class="col-span-1 order-2 md:order-1">
           <img src="../assets/img/sec3.png" alt="" />
         </div>
       </div>

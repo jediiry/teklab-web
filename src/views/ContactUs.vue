@@ -8,7 +8,7 @@
             date=""
         ></image-banner>
         <div class="flex justify-center">
-            <div class="flex">
+            <div class="flex flex-wrap justify-center">
                 <div class="bg-white shadow-md my-3 p-4 pt-5 w-72 rounded transform -translate-y-24 mr-4">
                     <div class="flex justify-center">
                         <img class="w-16" src="../assets/img/customer_support_icon.svg" alt="">
@@ -39,8 +39,10 @@
             </div>
         </div>
 
-        <div class="mb-24">
-            <div class="contact__formbox ">
+        <div class="mb-10 md:mb-24">
+            <div class="grid grid-cols-4 px-2">
+                <div class="col-span-4 md:col-span-2 md:col-start-2">
+<div >
                 <div class="mb-3 border w-full px-3 py-2">
                     <i class="fas fa-user mr-3"></i>
                     <input type="text" placeholder="Full Name">
@@ -66,6 +68,9 @@
                     <button class="px-14 py-3 bg-pink text-white rounded w-full">Submit Message</button>
                 </div>
             </div>
+                </div>
+            </div>
+            
         </div>
 
 
@@ -90,7 +95,7 @@ export default {
 
 <style>
 .contact__formbox{
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
 }
 

@@ -45,7 +45,7 @@
     <div class="bg-white p-5">
       <p class="text-center text-3xl font-bold">Trusted Partners</p>
       <div class="flex justify-center mt-5 w-100">
-        <div class="w-50">
+        <div class=" md:w-2/3">
           <carousel
             :touchDrag="false"
             :autoWidth="true"
@@ -55,6 +55,7 @@
             :margin="20"
             :nav="false"
             :items="3"
+            :responsive="{0:{items:1, nav:false},600:{items:3, nav:false}}"
           >
             <img src="../assets/img/3.svg" class="h-12 mx-5" alt="" />
             <img src="../assets/img/5.svg" class="h-12 mx-5" alt="" />
