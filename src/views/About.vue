@@ -48,7 +48,7 @@
       <div class="flex justify-center">
         <hr class="divider" />
       </div>
-      <p class="text-center text-3xl font-bold">Our Services</p>
+      <p class="text-center text-3xl font-bold">Our Core Values</p>
 
       <div class="px-10 py-3">
         <div class="grid md:grid-cols-3 gap-5">

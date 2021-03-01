@@ -275,7 +275,7 @@
       <div class="flex justify-center">
         <hr class="divider" />
       </div>
-      <p class="text-center text-3xl font-bold">Our Videos</p>
+      <p class="text-center text-3xl font-bold">Ethical Hacking</p>
       <div class="grid md:grid-cols-6">
         <div class="md:col-span-4 md:col-start-2">
           <div class="md:flex flex-wrap">
