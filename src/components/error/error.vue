@@ -22,7 +22,10 @@
           </div>
         </div>
         <div class="w-full flex md:w-1/2 md:mb-10">
-          <b-btn class="shadow-md pink-btn w-50 mt-3 mx-1">
+          <b-btn
+            @click="$router.go(-1)"
+            class="shadow-md pink-btn w-50 mt-3 mx-1"
+          >
             <i class="fas fa-angle-left"></i> Back
           </b-btn>
           <b-btn to="/" class="pink-btn-outline shadow-md w-50 mt-3 mx-1">

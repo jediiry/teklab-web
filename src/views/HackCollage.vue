@@ -215,24 +215,29 @@ export default {
             },
             {
               name: " Abusing SSRF on Selenium Grid ",
-              link: "",
+              link:
+                "https://medium.com/r3d-buck3t/abusing-ssrf-on-selenium-grid-1783bf503c15",
             },
             {
               name:
                 "Abusing Application Layer Gateways (NAT Slipstreaming) & New PoC ",
-              link: "",
+              link:
+                "https://embracethered.com/blog/posts/2020/nat-slipstreaming-simplified/",
             },
             {
               name: "Machine Learning Attack Series: Overview ",
-              link: "",
+              link:
+                "https://embracethered.com/blog/posts/2020/machine-learning-attack-series-overview/",
             },
             {
               name: "Building C2 Implants in C++: A Primer",
-              link: "",
+              link:
+                "https://shogunlab.gitbook.io/building-c2-implants-in-cpp-a-primer/",
             },
             {
               name: "Weaponizing Windows Sandbox To Bypass Defender ",
-              link: "",
+              link:
+                "https://blog.syscall.party/post/weaponizing-windows-sandbox/",
             },
             {
               name: "Beginners corner ",
@@ -241,24 +246,28 @@ export default {
             {
               name:
                 "Hacking into an AWS Account – Part 2: Jenkins & Hacking into an AWS Account – Part 3: Kubernetes ",
-              link: "",
+              link:
+                "https://www.pgs-soft.com/blog/hacking-into-an-aws-account-part-2-jenkins/",
             },
             {
               name:
                 "Introducing Monsoon ‒ A Lean And Versatile HTTP Enumerator ",
-              link: "",
+              link:
+                "https://blog.redteam-pentesting.de/2020/introducing-monsoon/",
             },
             {
               name: "Simple Recon Methodology",
-              link: "",
+              link:
+                "https://eslam3kl.medium.com/simple-recon-methodology-920f5c5936d4",
             },
             {
               name: "CSP bypasses, and how developers can build a strict CSP! ",
-              link: "",
+              link: "https://cspscanner.com/csp-bypasses",
             },
             {
               name: " State of the art of network pivoting in 2019",
-              link: "",
+              link:
+                "https://blog.raw.pm/en/state-of-the-art-of-network-pivoting-in-2019/",
             },
           ],
         },
@@ -430,17 +439,20 @@ export default {
             },
             {
               name: "Insecurity Through Obscurity - w/Nerdwell ",
-              link: "",
+              link:
+                "https://www.youtube.com/watch?v=frF8mvrWu7o&feature=youtu.be",
             },
             {
               name:
                 "Pedro Umbelino | Joao Morais  - Android Bug Foraging - DEF CON 28SM AppSec Village",
-              link: "",
+              link:
+                "https://www.youtube.com/watch?v=qbj-4NXsE-0&feature=youtu.be",
             },
             {
               name:
                 "Android Application Exploitation - DEF CON Safe Mode Red Team Village",
-              link: "",
+              link:
+                "https://www.youtube.com/watch?v=AqVMfZAboCg&feature=youtu.be",
             },
           ],
         },
