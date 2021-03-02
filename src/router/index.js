@@ -148,6 +148,11 @@ const routes = [
     name: "HackCollage",
     component: () => import("../views/HackCollage.vue"),
   },
+  {
+    path: "*",
+    name: "error",
+    component: () => import("../components/error/error.vue"),
+  },
 ];
 
 const router = new VueRouter({

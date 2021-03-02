@@ -1,9 +1,9 @@
 <template>
   <div
-    class="min-h-screen grid grid-cols-6 justify-center items-center md:bg-gray-200 px-1"
+    class="min-h-screen grid grid-cols-12 justify-center items-center md:bg-gray-200 px-1"
   >
     <div
-      class="col-span-6 text-center md:col-span-4 md:col-start-2 bg-white p-5 rounded"
+      class="col-span-6 text-center md:col-span-4 md:col-start-5 bg-white p-5 rounded"
     >
       <h2 class="text-xxl font-bold md:mt-10">
         <slot name="text"></slot>

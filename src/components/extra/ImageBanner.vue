@@ -13,11 +13,11 @@
     <div class="bottom-right italic">{{ date }}</div>
 
     <div class="centered px-4">
-      <h1 class="mb-2 text-6xl font-bold">{{ title }}</h1>
-      <p class="text-2xl">{{ subtitle }}</p>
-      
+      <h1 class="mb-2 text-4xl md:text-6xl font-bold">{{ title }}</h1>
+      <p class="text-lg md:text-2xl">{{ subtitle }}</p>
+
       <div v-if="btn">
-        <b-btn class="pink-btn" :href="btn.url" >{{btn.name}}</b-btn>
+        <b-btn class="pink-btn" :href="btn.url">{{ btn.name }}</b-btn>
       </div>
     </div>
   </div>

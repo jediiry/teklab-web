@@ -99,3 +99,7 @@ input:focus {
   background-color: #da04f2;
   color: white;
 }
+.backeffect {
+  background-image: url("../../assets/img/signupbackground.png");
+  background-size: cover;
+}

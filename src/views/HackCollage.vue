@@ -33,7 +33,17 @@
             <i class="fas fa-plus text-xl"></i>
           </button>
           <div class="panel__body p-3">
-            {{ item.content }}
+            <a
+              :href="i.link"
+              target="_blank"
+              class="block text-gray-900"
+              rel="noopener noreferrer"
+              :key="index"
+              v-for="(i, index) in item.content"
+            >
+              {{ i.name }}</a
+            >
+            <!-- {{ item.content }} -->
           </div>
         </div>
       </div>
@@ -61,181 +71,378 @@ export default {
           id: 1,
           name: "Security Creator YouTube channel list",
           list: true,
-          content: `
-                        https://securitycreators.video/  
-
-Others not on the list above 
-
-https://www.youtube.com/c/TheCyberMentor/videos 
-
-https://www.youtube.com/user/TomNomNomDotCom/videos 
-
-https://www.youtube.com/c/STOKfredrik/videos 
-
-https://www.youtube.com/c/StephenOgu/videos  
-
-https://www.youtube.com/c/B3nacSec/videos 
-
-https://www.youtube.com/c/CristiVladZ/videos 
-
-https://www.youtube.com/c/Nahamsec/videos 
-
-https://www.youtube.com/channel/UCq9IyPMXiwD8yBFHkxmN8zg 
-
-https://www.youtube.com/channel/UCjQHiY2JeOkBamHSg_6UeFw 
-
-https://www.youtube.com/user/RapidBug `,
+          content: [
+            {
+              name: "https://securitycreators.video/ ",
+              link: "https://securitycreators.video/ ",
+            },
+            {
+              name: "https://www.youtube.com/c/TheCyberMentor/videos",
+              link: "https://www.youtube.com/c/TheCyberMentor/videos",
+            },
+            {
+              name: "https://www.youtube.com/user/TomNomNomDotCom/videos ",
+              link: "https://www.youtube.com/user/TomNomNomDotCom/videos ",
+            },
+            {
+              name: "https://www.youtube.com/c/STOKfredrik/videos ",
+              link: "https://www.youtube.com/c/STOKfredrik/videos ",
+            },
+            {
+              name: "https://www.youtube.com/c/StephenOgu/videos ",
+              link: "https://www.youtube.com/c/StephenOgu/videos ",
+            },
+            {
+              name: "https://www.youtube.com/c/B3nacSec/videos ",
+              link: "https://www.youtube.com/c/B3nacSec/videos ",
+            },
+            {
+              name: "https://www.youtube.com/c/CristiVladZ/videos ",
+              link: "https://www.youtube.com/c/CristiVladZ/videos ",
+            },
+            {
+              name: "https://www.youtube.com/c/Nahamsec/videos ",
+              link: "https://www.youtube.com/c/Nahamsec/videos ",
+            },
+            {
+              name: "https://www.youtube.com/channel/UCq9IyPMXiwD8yBFHkxmN8zg ",
+              link: "https://www.youtube.com/channel/UCq9IyPMXiwD8yBFHkxmN8zg ",
+            },
+            {
+              name: "https://www.youtube.com/channel/UCjQHiY2JeOkBamHSg_6UeFw ",
+              link: "https://www.youtube.com/channel/UCjQHiY2JeOkBamHSg_6UeFw ",
+            },
+            {
+              name: "https://www.youtube.com/user/RapidBug ",
+              link: "https://www.youtube.com/user/RapidBug ",
+            },
+          ],
         },
         {
           id: 2,
           name: "OSCP Video Tutorial",
           list: false,
-          content: `https://www.youtube.com/c/ippsec/videos `,
+          content: [
+            {
+              name: `https://www.youtube.com/c/ippsec/videos `,
+              link: `https://www.youtube.com/c/ippsec/videos `,
+            },
+          ],
         },
         {
           id: 3,
           name: "Bug Bounty Cheat Sheet useful resource",
           list: false,
-          content: `https://m0chan.github.io/2019/12/17/Bug-Bounty-Cheetsheet.html  
-
-https://www.infosecmatter.com/bug-bounty-tips-8-oct-14/ 
-
-https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters  `,
+          content: [
+            {
+              name:
+                "https://m0chan.github.io/2019/12/17/Bug-Bounty-Cheetsheet.html  ",
+              link:
+                "https://m0chan.github.io/2019/12/17/Bug-Bounty-Cheetsheet.html  ",
+            },
+            {
+              name: "https://www.infosecmatter.com/bug-bounty-tips-8-oct-14/ ",
+              link: "https://www.infosecmatter.com/bug-bounty-tips-8-oct-14/ ",
+            },
+            {
+              name:
+                "https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters ",
+              link:
+                "https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters ",
+            },
+          ],
         },
         {
           id: 4,
           name: "Online Practical Hacking platform & CTF Challenges",
           list: false,
-          content: `https://www.vulnhub.com/ 
-
-https://www.hackthebox.eu/login 
-
-https://pentesterlab.com/ 
-
-https://portswigger.net/web-security 
-
-https://tryhackme.com/ 
-
-https://hackersploit.org/ 
-
-https://ctf.hacker101.com/ `,
+          content: [
+            {
+              name: "https://www.vulnhub.com/",
+              link: "https://www.vulnhub.com/",
+            },
+            {
+              name: "https://www.hackthebox.eu/login ",
+              link: "https://www.hackthebox.eu/login ",
+            },
+            {
+              name: "https://pentesterlab.com/ ",
+              link: "https://pentesterlab.com/ ",
+            },
+            {
+              name: "https://portswigger.net/web-security ",
+              link: "https://portswigger.net/web-security ",
+            },
+            {
+              name: "https://tryhackme.com/ ",
+              link: "https://tryhackme.com/ ",
+            },
+            {
+              name: "https://hackersploit.org/",
+              link: "https://hackersploit.org/",
+            },
+            {
+              name: "https://ctf.hacker101.com/ ",
+              link: "https://ctf.hacker101.com/ ",
+            },
+          ],
         },
         {
           id: 5,
           name: "Another Useful list",
           list: false,
-          content: `https://pentester.land/list-of-bug-bounty-writeups.html 
-
- 
-https://medium.com/@shivamrawat_756/best-websites-for-getting-started-with-ctf-64307f9f8d02 `,
+          content: [
+            {
+              name: "https://pentester.land/list-of-bug-bounty-writeups.html ",
+              link: "https://pentester.land/list-of-bug-bounty-writeups.html ",
+            },
+            {
+              name:
+                "https://medium.com/@shivamrawat_756/best-websites-for-getting-started-with-ctf-64307f9f8d02",
+              link:
+                "https://medium.com/@shivamrawat_756/best-websites-for-getting-started-with-ctf-64307f9f8d02",
+            },
+          ],
         },
         {
           id: 5,
           name: "Beginners and Advance Corner ",
           list: false,
-          content: `Medium to advanced 
-
-    Abusing SSRF on Selenium Grid 
-
-    Abusing Application Layer Gateways (NAT Slipstreaming) & New PoC 
-
-    Machine Learning Attack Series: Overview 
-
-    Building C2 Implants in C++: A Primer 
-
-    Weaponizing Windows Sandbox To Bypass Defender 
-
-Beginners corner 
-
-    Hacking into an AWS Account – Part 2: Jenkins & Hacking into an AWS Account – Part 3: Kubernetes 
-
-    Introducing Monsoon ‒ A Lean And Versatile HTTP Enumerator 
-
-    Simple Recon Methodology 
-
-    CSP bypasses, and how developers can build a strict CSP! 
-
-    State of the art of network pivoting in 2019 `,
+          content: [
+            {
+              name: "Medium to advanced",
+              link: "",
+            },
+            {
+              name: " Abusing SSRF on Selenium Grid ",
+              link: "",
+            },
+            {
+              name:
+                "Abusing Application Layer Gateways (NAT Slipstreaming) & New PoC ",
+              link: "",
+            },
+            {
+              name: "Machine Learning Attack Series: Overview ",
+              link: "",
+            },
+            {
+              name: "Building C2 Implants in C++: A Primer",
+              link: "",
+            },
+            {
+              name: "Weaponizing Windows Sandbox To Bypass Defender ",
+              link: "",
+            },
+            {
+              name: "Beginners corner ",
+              link: "",
+            },
+            {
+              name:
+                "Hacking into an AWS Account – Part 2: Jenkins & Hacking into an AWS Account – Part 3: Kubernetes ",
+              link: "",
+            },
+            {
+              name:
+                "Introducing Monsoon ‒ A Lean And Versatile HTTP Enumerator ",
+              link: "",
+            },
+            {
+              name: "Simple Recon Methodology",
+              link: "",
+            },
+            {
+              name: "CSP bypasses, and how developers can build a strict CSP! ",
+              link: "",
+            },
+            {
+              name: " State of the art of network pivoting in 2019",
+              link: "",
+            },
+          ],
         },
         {
           id: 5,
           name: "Hacking Books – Beginner to Advanced ",
           list: false,
-          content: `  The Hackers Playbook 2 by Peter Kim https://amzn.to/2ObGqkU  
-
-    The Hackers Playbook 3 by Peter Kim https://amzn.to/2QJ0s7Y  
-
-    Real-World Bug Hunting by Peter Yaworski https://amzn.to/2wjKDwy  
-
-    Rtfm: Red Team Field Manual by Ben Clark https://amzn.to/35wpI5z  
-
-    Hacking: The Art of Exploitation, 2nd Edition by Jon Erickson https://amzn.to/34dvTee  
-
-    The Web Application Hacker’s Handbook: Finding and Exploiting Security Flaws by Dafydd Stuttard & Marcus Pinto   https://amzn.to/34cAE86  
-
-    Penetration Testing: A Hands-On Introduction to Hacking by Georgia Weidman https://amzn.to/2ObXpDu  
-
-    Kali Linux Revealed: Mastering the Penetration Testing Distribution by Raphael Hertzog & Jim O’ Gorman  https://amzn.to/2qFEKaf  
-
-    Ghost in the Wires: My Adventures as the World’s Most Wanted Hacker by The Legend Himself, Kevin Mitnick  https://amzn.to/33f0DKx  
-
-    Advanced Penetration Testing: Hacking the World’s Most Secure Networks by Will Allsopp https://amzn.to/2rgmKmR  
-
-    Honorable Mention: Hacking MIT Metasploit by Michael Messner https://amzn.to/2D6ojWX   `,
+          content: [
+            {
+              name:
+                "The Hackers Playbook 2 by Peter Kim https://amzn.to/2ObGqkU",
+              link: "https://amzn.to/2ObGqkU",
+            },
+            {
+              name:
+                "The Hackers Playbook 3 by Peter Kim https://amzn.to/2QJ0s7Y ",
+              link: "https://amzn.to/2QJ0s7Y",
+            },
+            {
+              name:
+                "Real-World Bug Hunting by Peter Yaworski https://amzn.to/2wjKDwy",
+              link: "https://amzn.to/2wjKDwy",
+            },
+            {
+              name:
+                "Rtfm: Red Team Field Manual by Ben Clark https://amzn.to/35wpI5z ",
+              link: "https://amzn.to/35wpI5z ",
+            },
+            {
+              name:
+                "Hacking: The Art of Exploitation, 2nd Edition by Jon Erickson https://amzn.to/34dvTee",
+              link: "https://amzn.to/34dvTee",
+            },
+            {
+              name:
+                "The Web Application Hacker’s Handbook: Finding and Exploiting Security Flaws by Dafydd Stuttard & Marcus Pinto   https://amzn.to/34cAE86  ",
+              link: "https://amzn.to/34cAE86",
+            },
+            {
+              name:
+                "Penetration Testing: A Hands-On Introduction to Hacking by Georgia Weidman https://amzn.to/2ObXpDu ",
+              link: "https://amzn.to/2ObXpDu ",
+            },
+            {
+              name:
+                "Kali Linux Revealed: Mastering the Penetration Testing Distribution by Raphael Hertzog & Jim O’ Gorman  https://amzn.to/2qFEKaf  ",
+              link: "https://amzn.to/2qFEKaf",
+            },
+            {
+              name:
+                "Ghost in the Wires: My Adventures as the World’s Most Wanted Hacker by The Legend Himself, Kevin Mitnick  https://amzn.to/33f0DKx ",
+              link: "https://amzn.to/33f0DKx",
+            },
+            {
+              name:
+                "Advanced Penetration Testing: Hacking the World’s Most Secure Networks by Will Allsopp https://amzn.to/2rgmKmR  ",
+              link: "https://amzn.to/2rgmKmR ",
+            },
+            {
+              name:
+                "Honorable Mention: Hacking MIT Metasploit by Michael Messner https://amzn.to/2D6ojWX ",
+              link: "https://amzn.to/2D6ojWX",
+            },
+          ],
         },
         {
           id: 5,
           name: "HACKING Tools and Methodology",
           list: false,
-          content: `
-https://book.hacktricks.xyz/pentesting-methodology?s=08 
-
-https://book.hacktricks.xyz/external-recon-methodology?s=08 
-
-https://github.com/Z4nzu/hackingtool 
-
-https://github.com/dafthack/CloudPentestCheatsheets 
-
-https://m0chan.github.io/2019/12/17/Bug-Bounty-Cheetsheet.html  `,
+          content: [
+            {
+              name: "https://book.hacktricks.xyz/pentesting-methodology?s=08 ",
+              link: "https://book.hacktricks.xyz/pentesting-methodology?s=08 ",
+            },
+            {
+              name:
+                "https://book.hacktricks.xyz/external-recon-methodology?s=08 ",
+              link:
+                "https://book.hacktricks.xyz/external-recon-methodology?s=08 ",
+            },
+            {
+              name: "https://github.com/Z4nzu/hackingtool ",
+              link: "https://github.com/Z4nzu/hackingtool ",
+            },
+            {
+              name: "https://github.com/dafthack/CloudPentestCheatsheets",
+              link: "https://github.com/dafthack/CloudPentestCheatsheets",
+            },
+            {
+              name:
+                "https://m0chan.github.io/2019/12/17/Bug-Bounty-Cheetsheet.html ",
+              link:
+                "https://m0chan.github.io/2019/12/17/Bug-Bounty-Cheetsheet.html ",
+            },
+          ],
         },
         {
           id: 5,
           name: "HACKING TELECOM NETWORK WHRITE UP ",
           list: false,
-          content: `https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-1-getting-the-rce-167c2bb320e6 
-
-https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-2-playing-with-tunnels-tcp-tunneling-b4cef2837938 
-
-https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-3-playing-with-tunnels-stealthy-ssh-dynamic-tunnels-5ac26557d0eb 
-
-https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-4-getting-access-to-cdrs-ss7-applications-vlrs-9a8cf95e2648 
-
-https://medium.com/@afolicdaralee/hacking-a-telecommunication-company-mtn-c46696451fed `,
+          content: [
+            {
+              name:
+                "https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-1-getting-the-rce-167c2bb320e6 ",
+              link:
+                "https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-1-getting-the-rce-167c2bb320e6 ",
+            },
+            {
+              name:
+                "https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-2-playing-with-tunnels-tcp-tunneling-b4cef2837938 ",
+              link:
+                "https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-2-playing-with-tunnels-tcp-tunneling-b4cef2837938 ",
+            },
+            {
+              name:
+                "https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-3-playing-with-tunnels-stealthy-ssh-dynamic-tunnels-5ac26557d0eb",
+              link:
+                "https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-3-playing-with-tunnels-stealthy-ssh-dynamic-tunnels-5ac26557d0eb",
+            },
+            {
+              name:
+                "https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-4-getting-access-to-cdrs-ss7-applications-vlrs-9a8cf95e2648 ",
+              link:
+                "https://medium.com/bugbountywriteup/how-i-hacked-into-a-telecom-network-part-4-getting-access-to-cdrs-ss7-applications-vlrs-9a8cf95e2648 ",
+            },
+            {
+              name:
+                "https://medium.com/@afolicdaralee/hacking-a-telecommunication-company-mtn-c46696451fed ",
+              link:
+                "https://medium.com/@afolicdaralee/hacking-a-telecommunication-company-mtn-c46696451fed ",
+            },
+          ],
         },
         {
           id: 5,
           name: "Courses and Certifications  ",
           list: false,
-          content: `https://www.offensive-security.com/courses-and-certifications/ 
-
-https://elearnsecurity.com/ 
-
-https://www.eccouncil.org/programs/ 
-
-https://www.isc2.org/Certifications `,
+          content: [
+            {
+              name:
+                "https://www.offensive-security.com/courses-and-certifications/ ",
+              link:
+                "https://www.offensive-security.com/courses-and-certifications/ ",
+            },
+            {
+              name: "https://elearnsecurity.com/ ",
+              link: "https://elearnsecurity.com/ ",
+            },
+            {
+              name: "https://www.eccouncil.org/programs/ ",
+              link: "https://www.eccouncil.org/programs/ ",
+            },
+            {
+              name: "https://www.isc2.org/Certifications ",
+              link: "https://www.isc2.org/Certifications ",
+            },
+          ],
         },
         {
           id: 5,
           name: "Mobile hacking writes up and presentation",
           list: false,
-          content: `http://www.nuckingfoob.me/android-webview-csp-iframe-sandbox-bypass/index.html 
-
-Insecurity Through Obscurity - w/Nerdwell 
-
-Pedro Umbelino | Joao Morais  - Android Bug Foraging - DEF CON 28SM AppSec Village 
-
-Android Application Exploitation - DEF CON Safe Mode Red Team Village 
- `,
+          content: [
+            {
+              name:
+                "http://www.nuckingfoob.me/android-webview-csp-iframe-sandbox-bypass/index.html ",
+              link:
+                "http://www.nuckingfoob.me/android-webview-csp-iframe-sandbox-bypass/index.html ",
+            },
+            {
+              name: "Insecurity Through Obscurity - w/Nerdwell ",
+              link: "",
+            },
+            {
+              name:
+                "Pedro Umbelino | Joao Morais  - Android Bug Foraging - DEF CON 28SM AppSec Village",
+              link: "",
+            },
+            {
+              name:
+                "Android Application Exploitation - DEF CON Safe Mode Red Team Village",
+              link: "",
+            },
+          ],
         },
       ],
     };
@@ -294,7 +501,7 @@ Android Application Exploitation - DEF CON Safe Mode Red Team Village
   background-color: white;
   overflow: hidden;
 }
-.toggletrue{
-    border: 4px solid #da04f2;
+.toggletrue {
+  border: 4px solid #da04f2;
 }
 </style>
