@@ -6,7 +6,7 @@
         Email your email and we’ll send you a link to reset your password
       </div>
       <div slot="icon">
-        <i class="fas fa-lock fa-6x"></i>
+        <i class="fas fa-lock fa-6x "></i>
       </div>
       <div slot="buttontitle">Reset Password</div>
       <span slot="backtitle">Back to Login</span>

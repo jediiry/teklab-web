@@ -65,8 +65,5 @@ export default {
 </script>
 
 <style>
-.backeffect {
-  background-image: url("../../assets/img/signupbackground.png");
-  background-size: cover;
-}
+
 </style>
